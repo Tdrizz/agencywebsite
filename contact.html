@@ -3,40 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
+  <title>Contact Us - Last Frontier Marketing</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Navbar -->
   <nav>
     <div class="logo">
-      <a href="/agencywebsite/">Last Frontier Marketing</a>
+      <a href="index.html">Last Frontier Marketing</a>
     </div>
     <ul class="nav-links">
       <li><a href="services.html">Pricing</a></li>
+      <li><a href="portfolio.html">Our Work</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="work.html">Our Work</a></li>
     </ul>
   </nav>
 
+  <!-- Contact Form -->
   <header>
     <h1>Contact Us</h1>
-    <p>We’re excited to work with you! Fill out the form below to get started.</p>
+    <p>Ready to grow your business? Get in touch with us today!</p>
   </header>
 
   <section class="contact-form">
-    <form>
-      <label for="name">Your Name</label>
+    <form action="submit-form.php" method="POST">
+      <label for="name">Your Name:</label>
       <input type="text" id="name" name="name" required>
-
-      <label for="email">Your Email</label>
+      
+      <label for="email">Your Email:</label>
       <input type="email" id="email" name="email" required>
-
-      <label for="message">How can we help?</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">Send Message</button>
+      
+      <label for="business">Business Type:</label>
+      <select id="business" name="business">
+        <option value="Fishing Guide">Fishing Guide</option>
+        <option value="Landscaping">Landscaping</option>
+        <option value="Other">Other</option>
+      </select>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit" class="cta-btn">Submit</button>
     </form>
   </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Last Frontier Marketing | <a href="contact.html">Contact Us</a></p>
+  </footer>
 </body>
 </html>
