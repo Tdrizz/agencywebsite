@@ -1,47 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Last Frontier Marketing</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <nav>
-    <div class="logo">
-      <a href="index.html">Last Frontier Marketing</a>
-    </div>
-    <ul class="nav-links">
-      <li><a href="services.html">Services</a></li>
-      <li><a href="work.html">Portfolio</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">Last Frontier</a></div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <header>
-    <h1>Grow Your Business with Smart Marketing</h1>
-    <p>Affordable, effective marketing solutions tailored to small and local businesses.</p>
-    <a href="contact.html" class="cta-button">Schedule a Free Consultation</a>
-  </header>
-
-  <section class="features">
-    <h2>What We Offer</h2>
-    <div class="feature">
-      <h3>Website & Funnel Design</h3>
-      <p>Modern, responsive designs that convert visitors into leads.</p>
-    </div>
-    <div class="feature">
-      <h3>Local & Search Marketing</h3>
-      <p>Show up on Google when your customers are searching for services like yours.</p>
-    </div>
-    <div class="feature">
-      <h3>Paid Advertising</h3>
-      <p>Facebook, Instagram, and Google Ads built to drive real results.</p>
+    <div class="hero-content">
+      <h1>Marketing That Moves</h1>
+      <p>Helping businesses grow through strategic design, clear messaging, and real results.</p>
+      <a href="#contact" class="cta-btn">Let's Talk</a>
     </div>
   </section>
 
-  <section class="cta">
-    <p>Let's grow your business together. <a href="contact.html">Book a call today.</a></p>
+  <!-- Services -->
+  <section id="services" class="section">
+    <h2>What We Do</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Website Design</h3>
+        <p>Modern, responsive websites designed to impress and convert.</p>
+      </div>
+      <div class="card">
+        <h3>Paid Advertising</h3>
+        <p>Targeted ads that drive traffic and leads directly to your business.</p>
+      </div>
+      <div class="card">
+        <h3>SEO & Content</h3>
+        <p>Boost your visibility and rank higher with optimized content strategies.</p>
+      </div>
+    </div>
   </section>
+
+  <!-- Our Work -->
+  <section id="work" class="section dark">
+    <h2>Our Work</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Bold Builders Co.</h3>
+        <p>Full site redesign and SEO boost, increasing traffic by 85% in 3 months.</p>
+      </div>
+      <div class="project">
+        <h3>Coastal Coffeehouse</h3>
+        <p>Social campaign & landing page that doubled monthly customers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Let’s Build Something</h2>
+    <p>Drop your info and we’ll be in touch.</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="What can we help you with?" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Last Frontier Marketing. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
