@@ -17,7 +17,6 @@
     <nav class="flex justify-between items-center px-8 py-6 shadow-md">
       <a href="index.html" class="text-2xl font-extrabold tracking-tight">Last Frontier Marketing</a>
       <ul class="flex space-x-6 text-base font-medium">
-        <li><a href="services.html" class="hover:text-blue-600">Services</a></li>
         <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
       </ul>
     </nav>
@@ -26,27 +25,42 @@
     <section class="hero text-center py-24 px-6 bg-gradient-to-b from-blue-50 to-white">
       <h1 class="text-5xl font-extrabold mb-4">Marketing That Moves Your Business Forward</h1>
       <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">We help Alaskan businesses grow with high-converting websites, smart digital campaigns, and clean branding.</p>
-      <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg text-lg">Let's Talk</a>
     </section>
 
     <!-- Services Preview -->
     <section class="py-20 px-8 max-w-6xl mx-auto">
       <h2 class="text-3xl font-bold mb-10 text-center">What We Offer</h2>
       <div class="grid md:grid-cols-3 gap-12">
-        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+        <!-- Website Design -->
+        <div class="group bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition relative overflow-hidden">
           <h3 class="text-xl font-semibold mb-2">Website Design</h3>
-          <p class="text-gray-600">Fast, modern, and mobile-friendly sites that build trust and drive action.</p>
+          <p class="text-gray-600">Fast, modern, and mobile-friendly sites.</p>
+          <div class="absolute inset-0 bg-white bg-opacity-95 p-4 text-sm text-gray-700 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out rounded-xl">
+            <p>We build sleek websites that reflect your brand and drive results. All sites are optimized for mobile, speed, and conversions. We'll walk you through every step from layout to launch.</p>
+          </div>
         </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+    
+        <!-- SEO & Ads -->
+        <div class="group bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition relative overflow-hidden">
           <h3 class="text-xl font-semibold mb-2">SEO & Ads</h3>
-          <p class="text-gray-600">Appear at the top of Google and get qualified traffic to your site daily.</p>
+          <p class="text-gray-600">Get qualified traffic every day.</p>
+          <div class="absolute inset-0 bg-white bg-opacity-95 p-4 text-sm text-gray-700 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out rounded-xl">
+            <p>We'll help your site rank higher on Google and get the right people to visit. We also manage ad campaigns to get more leads while staying within your budget.</p>
+          </div>
         </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+    
+        <!-- Branding & Strategy -->
+        <div class="group bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition relative overflow-hidden">
           <h3 class="text-xl font-semibold mb-2">Branding & Strategy</h3>
-          <p class="text-gray-600">Clarify your message and build a consistent presence that customers remember.</p>
+          <p class="text-gray-600">Create a brand people remember.</p>
+          <div class="absolute inset-0 bg-white bg-opacity-95 p-4 text-sm text-gray-700 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out rounded-xl">
+            <p>We help you define your voice, design your logo, and build a strategy so everything looks and sounds consistent — online and offline.</p>
+          </div>
         </div>
       </div>
     </section>
+    
+    
 
     <!-- CTA -->
     <section class="text-center py-20 bg-blue-600 text-white">
