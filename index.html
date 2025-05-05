@@ -23,8 +23,8 @@
 
     <!-- Hero -->
     <section class="hero text-center py-24 px-6 bg-gradient-to-b from-blue-50 to-white">
-      <h1 class="text-5xl font-extrabold mb-4">Marketing That Moves Your Business Forward</h1>
-      <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">We help Alaskan businesses grow with high-converting websites, smart digital campaigns, and clean branding.</p>
+      <h1 class="text-5xl font-extrabold mb-4">Marketing Built for Alaska</h1>
+      <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Helping local guides, trades, and shops grow online with high-converting websites, digital ads, and clean branding.</p>
     </section>
 
     <!-- Services Preview -->
@@ -32,35 +32,33 @@
       <h2 class="text-3xl font-bold mb-10 text-center">What We Offer</h2>
       <div class="grid md:grid-cols-3 gap-12">
         <!-- Website Design -->
-        <div class="group bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition relative overflow-hidden">
-          <h3 class="text-xl font-semibold mb-2">Website Design</h3>
-          <p class="text-gray-600">Fast, modern, and mobile-friendly sites.</p>
-          <div class="absolute inset-0 bg-white bg-opacity-95 p-4 text-sm text-gray-700 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out rounded-xl">
-            <p>We build sleek websites that reflect your brand and drive results. All sites are optimized for mobile, speed, and conversions. We'll walk you through every step from layout to launch.</p>
-          </div>
-        </div>
-    
-        <!-- SEO & Ads -->
-        <div class="group bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition relative overflow-hidden">
-          <h3 class="text-xl font-semibold mb-2">SEO & Ads</h3>
-          <p class="text-gray-600">Get qualified traffic every day.</p>
-          <div class="absolute inset-0 bg-white bg-opacity-95 p-4 text-sm text-gray-700 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out rounded-xl">
-            <p>We'll help your site rank higher on Google and get the right people to visit. We also manage ad campaigns to get more leads while staying within your budget.</p>
-          </div>
-        </div>
-    
-        <!-- Branding & Strategy -->
-        <div class="group bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition relative overflow-hidden">
-          <h3 class="text-xl font-semibold mb-2">Branding & Strategy</h3>
-          <p class="text-gray-600">Create a brand people remember.</p>
-          <div class="absolute inset-0 bg-white bg-opacity-95 p-4 text-sm text-gray-700 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out rounded-xl">
-            <p>We help you define your voice, and build a strategy so everything looks and sounds consistent — online and offline.</p>
-          </div>
-        </div>
+    <div onclick="toggleCard(this)" class="service-card bg-gray-50 p-6 rounded-xl shadow transition-all duration-300 transform cursor-pointer">
+      <h3 class="text-xl font-semibold mb-2">Website Design</h3>
+      <p class="text-gray-600 short-desc">Tap to learn more</p>
+      <div class="full-desc hidden mt-4 text-gray-800 text-sm">
+        We build clean, fast-loading websites that reflect the spirit of your business and the unique challenges of working in Alaska. Whether you're running fishing charters out of Homer, operating a lodge in Fairbanks, or offering skilled trades in Anchorage, we design with your audience and your terrain in mind — built for speed, clarity, and mobile users on the go.
+      </div>
+    </div>
+
+    <!-- SEO & Ads -->
+    <div onclick="toggleCard(this)" class="service-card bg-gray-50 p-6 rounded-xl shadow transition-all duration-300 transform cursor-pointer">
+      <h3 class="text-xl font-semibold mb-2">SEO & Ads</h3>
+      <p class="text-gray-600 short-desc">Tap to learn more</p>
+      <div class="full-desc hidden mt-4 text-gray-800 text-sm">
+        Getting found online in a big state with small towns takes strategy. We help Alaskan businesses rank higher in search and run smart, effective ad campaigns that bring real leads — not just clicks. Whether you’re targeting locals or seasonal visitors, we tailor every campaign to your goals.
+      </div>
+    </div>
+
+    <!-- Branding & Strategy -->
+    <div onclick="toggleCard(this)" class="service-card bg-gray-50 p-6 rounded-xl shadow transition-all duration-300 transform cursor-pointer">
+      <h3 class="text-xl font-semibold mb-2">Branding & Strategy</h3>
+      <p class="text-gray-600 short-desc">Tap to learn more</p>
+      <div class="full-desc hidden mt-4 text-gray-800 text-sm">
+        We help Alaskan businesses carve out a brand identity that actually sticks — one that feels natural, speaks to your customers, and builds trust over time. From voice and tone to color and presence, we craft a strategy that keeps everything aligned and authentic — whether you're in town, online, or out in the bush.
+      </div>
+    </div>
       </div>
     </section>
-    
-
 
     <!-- CTA -->
     <section class="text-center py-20 bg-blue-600 text-white">
@@ -73,5 +71,28 @@
     <footer class="text-center py-10 text-sm text-gray-500">
       &copy; 2025 Last Frontier Marketing. All rights reserved.
     </footer>
+
+    <!-- JS for tap interaction -->
+    <script>
+      function toggleCard(card) {
+        const allCards = document.querySelectorAll('.service-card');
+    
+        allCards.forEach(c => {
+          if (c !== card) {
+            c.classList.remove('scale-105');
+            c.querySelector('.full-desc').classList.add('hidden');
+            c.querySelector('.short-desc').classList.remove('hidden');
+          }
+        });
+    
+        const fullDesc = card.querySelector('.full-desc');
+        const shortDesc = card.querySelector('.short-desc');
+    
+        card.classList.toggle('scale-105');
+        fullDesc.classList.toggle('hidden');
+        shortDesc.classList.toggle('hidden');
+      }
+    </script>
+    
   </body>
 </html>
