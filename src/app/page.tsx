@@ -67,15 +67,6 @@ const services = [
   },
 ];
 
-const pricingFeatures = [
-  "Functional website (10-20 pages)",
-  "Automated lead follow-up",
-  "Missed call text back",
-  "Review management",
-  "One-click marketing campaigns",
-  "Local SEO",
-];
-
 export default function Home() {
   return (
     <>
@@ -227,62 +218,6 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
-
-      {/* Pricing Teaser */}
-      <section className="py-24 px-6 max-w-4xl mx-auto">
-        <div className="text-center max-w-xl mx-auto mb-14">
-          <span className="eyebrow">Pricing</span>
-          <h2 className="heading-font text-3xl md:text-4xl font-bold mt-5 mb-4">
-            One plan, everything included
-          </h2>
-          <p className="text-gray-600">No contracts, cancel anytime.</p>
-        </div>
-        <div className="pricing-card p-10 max-w-md mx-auto">
-          <span className="pricing-badge absolute -top-4 left-1/2 -translate-x-1/2">
-            Most Popular
-          </span>
-          <h3 className="text-xl font-bold mb-1 text-center heading-font">
-            UnifiedOps Core
-          </h3>
-          <p className="text-center text-slate-400 text-sm mb-6">
-            Everything a contractor needs to grow
-          </p>
-          <p className="text-center mb-8">
-            <span className="text-5xl font-extrabold heading-font">$297</span>
-            <span className="text-slate-400">/month</span>
-          </p>
-          <ul className="space-y-4 mb-9">
-            {pricingFeatures.map((feature) => (
-              <li key={feature} className="flex items-start gap-3">
-                <span className="check-dot">
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="3"
-                  >
-                    <path d="M20 6 9 17l-5-5" />
-                  </svg>
-                </span>
-                <span className="text-slate-200 text-sm">{feature}</span>
-              </li>
-            ))}
-          </ul>
-          <Link href="/contact" className="btn-primary w-full">
-            Book a Call
-          </Link>
-        </div>
-        <p className="text-center text-gray-500 text-sm mt-8">
-          Need more? Google Business Profile optimization, advanced SEO, and
-          paid ads are available as add-ons — see{" "}
-          <Link href="/pricing" className="text-blue-600 hover:underline">
-            full pricing details
-          </Link>
-          .
-        </p>
       </section>
 
       <CtaBand
