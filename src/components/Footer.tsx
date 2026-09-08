@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const siteLinks = [
@@ -14,7 +15,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 mb-12">
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <span className="logo-mark">UO</span>
+            <Image src="/logo.svg" alt="UnifiedOps" width={34} height={34} className="rounded-[9px]" />
             <span className="text-lg font-bold heading-font text-white">
               UnifiedOps
             </span>

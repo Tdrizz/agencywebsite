@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -20,7 +21,7 @@ export default function Nav() {
     <nav className="site-nav">
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="logo-mark">UO</span>
+          <Image src="/logo.svg" alt="UnifiedOps" width={34} height={34} className="rounded-[9px]" />
           <span className="text-lg font-bold heading-font tracking-tight">
             UnifiedOps
           </span>

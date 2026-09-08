@@ -33,20 +33,6 @@ h1, h2, h3, .heading-font {
   border-bottom: 1px solid var(--line);
 }
 
-.logo-mark {
-  width: 34px;
-  height: 34px;
-  border-radius: 9px;
-  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: 800;
-  font-size: 15px;
-  flex-shrink: 0;
-}
-
 /* Hero */
 .hero-bg {
   position: relative;
