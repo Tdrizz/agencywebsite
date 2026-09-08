@@ -43,8 +43,12 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto border-t border-slate-800 pt-6 text-center text-xs text-slate-500">
-        &copy; 2026 UnifiedOps. All rights reserved.
+      <div className="max-w-6xl mx-auto border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-3 text-xs text-slate-500">
+        <span>&copy; 2026 UnifiedOps. All rights reserved.</span>
+        <div className="flex items-center gap-5">
+          <Link href="/privacy">Privacy Policy</Link>
+          <Link href="/terms">Terms of Service</Link>
+        </div>
       </div>
     </footer>
   );
