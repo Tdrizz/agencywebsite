@@ -1,6 +1,7 @@
+@import "tailwindcss";
+
 :root {
   --ink: #0f172a;
-  --ink-soft: #475569;
   --line: #e2e8f0;
   --surface: #f8fafc;
   --brand: #2563eb;
@@ -8,17 +9,18 @@
   --brand-light: #dbeafe;
 }
 
-* {
-  font-family: 'Inter', sans-serif;
-}
-
-h1, h2, h3, .heading-font {
-  font-family: 'Sora', 'Inter', sans-serif;
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-sora);
 }
 
 body {
   color: var(--ink);
   background: #ffffff;
+}
+
+h1, h2, h3, .heading-font {
+  font-family: var(--font-heading), var(--font-sans), sans-serif;
 }
 
 /* Navigation */
@@ -90,6 +92,11 @@ body {
   border-radius: 999px;
 }
 
+.eyebrow-dark {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .hero-panel {
   background: #ffffff;
   border: 1px solid var(--line);
@@ -117,6 +124,11 @@ body {
   box-shadow: 0 16px 30px -10px rgba(37, 99, 235, 0.6);
 }
 
+.btn-primary-sm {
+  padding: 10px 20px;
+  font-size: 0.875rem;
+}
+
 .btn-secondary {
   display: inline-flex;
   align-items: center;
@@ -136,7 +148,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* Service cards */
+/* Service / product cards */
 .service-card {
   background: #fff;
   border: 1px solid var(--line);
@@ -159,6 +171,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-badge-lg {
+  width: 56px;
+  height: 56px;
 }
 
 /* How it works */
@@ -172,12 +190,14 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-family: 'Sora', sans-serif;
+  font-family: var(--font-heading), sans-serif;
+  flex-shrink: 0;
 }
 
-.step-line {
-  height: 2px;
-  background: var(--line);
+.step-num-lg {
+  width: 52px;
+  height: 52px;
+  font-size: 1.25rem;
 }
 
 /* Pricing */
@@ -212,9 +232,55 @@ body {
   flex-shrink: 0;
 }
 
+.check-dot-light {
+  background: var(--brand-light);
+  color: var(--brand-dark);
+}
+
 /* CTA band */
 .cta-band {
   background: radial-gradient(120% 140% at 20% 0%, #1e3a8a 0%, #0f172a 60%);
+}
+
+/* Page header banner */
+.page-hero {
+  background: radial-gradient(120% 160% at 15% 0%, #1e3a8a 0%, #0f172a 65%);
+  color: #fff;
+}
+
+/* Trades grid */
+.trade-chip {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.trade-chip:hover {
+  transform: translateY(-2px);
+  border-color: var(--brand);
+  color: var(--brand-dark);
+}
+
+/* Value / about cards */
+.value-card {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 28px;
+}
+
+/* FAQ */
+.faq-item {
+  border-bottom: 1px solid var(--line);
+  padding: 22px 0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
 }
 
 /* Footer */
