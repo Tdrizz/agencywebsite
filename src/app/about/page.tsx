@@ -15,7 +15,7 @@ const values = [
   {
     title: "No fluff, no contracts",
     description:
-      "One flat price for the build. If you want ongoing care, it's month-to-month — straight talk, straightforward pricing.",
+      "One flat price for the build. If you want ongoing care, it's billed monthly, cancel anytime. Straight talk, straightforward pricing.",
   },
   {
     title: "Built around your business",
@@ -41,13 +41,13 @@ export default function AboutPage() {
           We started UnifiedOps because we kept seeing the same problem:
           good small businesses doing great work, held back by a website
           that was slow, outdated, or never quite finished. That&apos;s not
-          a skills problem — it&apos;s usually just a matter of having
+          a skills problem. It&apos;s usually just a matter of having
           someone build it right the first time.
         </p>
         <p className="text-gray-600 leading-relaxed">
-          So we build simple, custom websites — designed around your
+          So we build simple, custom websites designed around your
           business, live on your own domain, with a straightforward price
-          and no long-term contract.
+          and no contract.
         </p>
       </section>
 
@@ -73,7 +73,7 @@ export default function AboutPage() {
 
       <CtaBand
         heading="Let's talk about your business"
-        body="Book a free call — no pressure, just a straight answer on whether we're a fit."
+        body="Book a free call. No pressure, just a straight answer on whether we're a fit."
       />
     </>
   );

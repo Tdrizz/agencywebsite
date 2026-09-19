@@ -61,7 +61,7 @@ export default function TermsPage() {
               4. Billing
             </h2>
             <p>
-              The website build is billed as a one-time, upfront fee. If you
+              The website build is billed as a single upfront fee. If you
               choose an ongoing care plan, that portion is billed on a
               recurring monthly basis as described on our{" "}
               <a href="/pricing" className="text-blue-600 hover:underline">
@@ -78,8 +78,8 @@ export default function TermsPage() {
               5. Cancellation
             </h2>
             <p>
-              There&apos;s no contract on the website build itself — it&apos;s
-              a one-time purchase. A care plan can be canceled at any time,
+              There&apos;s no contract on the website build itself. It&apos;s
+              a single purchase. A care plan can be canceled at any time,
               effective at the end of your current billing period. If we
               host your site as part of a care plan and it&apos;s canceled,
               hosting ends, though you keep your domain and we&apos;ll

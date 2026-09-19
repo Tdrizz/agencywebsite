@@ -20,7 +20,7 @@ const carePlans = [
     name: "Basic",
     price: "$25",
     description:
-      "Hosting and domain management, required for every site. First month is included in the build — then $25/month.",
+      "Hosting and domain management, required for every site. First month is included in the build, then $25/month.",
     features: [
       "Hosting and domain management",
       "Uptime monitoring",
@@ -42,11 +42,11 @@ const carePlans = [
   {
     name: "Care Plan",
     price: "$100",
-    description: "Priority support and a regular check-in on your site.",
+    description: "Priority support and a regular review of your site.",
     features: [
       "Everything in Standard",
-      "48-hour priority turnaround",
-      "Quarterly check-in on messaging and search visibility",
+      "Priority turnaround within 48 hours",
+      "Quarterly review of messaging and search visibility",
     ],
   },
 ];
@@ -55,7 +55,7 @@ const faqs = [
   {
     question: "Is there a contract?",
     answer:
-      "The website build is a one-time cost, and it includes your first month of Basic hosting. After that, Basic is billed monthly since we host every site we build. Standard and Care Plan are optional upgrades on top of Basic, also month-to-month, cancel anytime.",
+      "The website build is billed once, and it includes your first month of Basic hosting. After that, Basic is billed monthly since we host every site we build. Standard and Care Plan are optional upgrades on top of Basic, also billed monthly, cancel anytime.",
   },
   {
     question: "How fast can we launch?",
@@ -64,17 +64,17 @@ const faqs = [
   {
     question: "What if I want more pages later?",
     answer:
-      "That's a quick add-on. Extra pages like a services page, testimonials, or a blog are quoted separately once we know what you need.",
+      "That's a quick addition. Extra pages like a services page, testimonials, or a blog are quoted separately once we know what you need.",
   },
   {
     question: "Can I cancel the monthly plan?",
     answer:
-      "You can drop down from Standard or Care Plan to Basic anytime. Since Basic covers hosting for the site we built, canceling it takes your site offline at the end of the billing period — you keep your domain either way.",
+      "You can drop down from Standard or Care Plan to Basic anytime. Since Basic covers hosting for the site we built, canceling it takes your site offline at the end of the billing period. You keep your domain either way.",
   },
   {
     question: "Do I need a care plan?",
     answer:
-      "The Basic plan is required — we host every site we build, so it covers your hosting, domain, and technical upkeep. Your first month is included in the $800 build; it's $25/month after that. Standard and Care Plan are optional upgrades if you want us handling small updates too.",
+      "The Basic plan is required. We host every site we build, so it covers your hosting, domain, and technical upkeep. Your first month is included in the $800 build, and it's $25/month after that. Standard and Care Plan are optional upgrades if you want us handling small updates too.",
   },
 ];
 
@@ -84,7 +84,7 @@ export default function PricingPage() {
       <PageHero
         eyebrow="Pricing"
         title="Simple, honest pricing"
-        subtitle="A one-time build with your first month of hosting included, then $25/month after that since we host every site we build. Standard and Care Plan are optional upgrades."
+        subtitle="A single flat fee to build, with your first month of hosting included, then $25/month after that since we host every site we build. Standard and Care Plan are optional upgrades."
       />
 
       <section className="py-24 px-6 max-w-4xl mx-auto">
@@ -134,9 +134,9 @@ export default function PricingPage() {
             Keep your site running smoothly
           </h2>
           <p className="text-gray-600">
-            We host every site we build, so the Basic plan is required — your
-            first month is covered by the $800 build. Standard and Care Plan
-            add more support on top and are entirely optional — start or
+            We host every site we build, so the Basic plan is required, and
+            your first month is covered by the $800 build. Standard and Care
+            Plan add more support on top and are entirely optional. Start or
             cancel anytime.
           </p>
         </div>
@@ -192,7 +192,7 @@ export default function PricingPage() {
           ))}
         </div>
         <p className="text-center text-gray-500 text-sm mt-8 max-w-lg mx-auto">
-          Every site starts on Basic. No pressure to upgrade — you can move
+          Every site starts on Basic. No pressure to upgrade. You can move
           to Standard or Care Plan anytime.
         </p>
       </section>

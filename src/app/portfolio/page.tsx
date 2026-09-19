@@ -18,7 +18,7 @@ const projects = [
     name: "In & Out Flooring",
     industry: "Flooring Contractor · Alaska",
     description:
-      "A custom site for a licensed and insured flooring contractor serving residential, rental, and commercial properties. Clean, mobile-friendly design built to turn visitors into calls.",
+      "A custom site for a licensed and insured flooring contractor serving residential, rental, and commercial properties. Clean design that works well on every device, built to turn visitors into calls.",
     url: "https://inanoutflooringak.com",
   },
 ];
