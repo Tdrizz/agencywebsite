@@ -2,10 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const siteLinks = [
-  { href: "/products", label: "Products" },
-  { href: "/pricing", label: "Pricing" },
   { href: "/portfolio", label: "Portfolio" },
-  { href: "/trades", label: "Trades We Serve" },
+  { href: "/pricing", label: "Pricing" },
   { href: "/process", label: "Our Process" },
   { href: "/about", label: "About" },
 ];
@@ -22,8 +20,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-sm max-w-xs">
-            Websites and marketing systems built for contractors — simple to
-            use, no fluff.
+            Custom websites for small businesses — simple pricing, no fluff.
           </p>
         </div>
         <div>

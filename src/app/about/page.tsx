@@ -10,17 +10,17 @@ const values = [
   {
     title: "Simple over clever",
     description:
-      "If it takes a manual to use, we didn't build it right. Everything we hand you should make sense in five minutes.",
+      "Your site should be easy to explain and easy to use. No unnecessary complexity, on either side.",
   },
   {
     title: "No fluff, no contracts",
     description:
-      "We'd rather earn your business every month than lock you in. Straight talk, straightforward pricing.",
+      "One flat price for the build. If you want ongoing care, it's month-to-month — straight talk, straightforward pricing.",
   },
   {
-    title: "Built for the trades",
+    title: "Built around your business",
     description:
-      "We design for how contractors actually work — on the go, on the phone, between jobs.",
+      "Not a template with your logo dropped in. We design around what you actually do and who you're trying to reach.",
   },
 ];
 
@@ -29,8 +29,8 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About Us"
-        title="Simple systems that actually work"
-        subtitle="UnifiedOps was built by two people who got tired of watching good contractors lose jobs to bad marketing."
+        title="Websites that actually fit your business"
+        subtitle="UnifiedOps was built by two people who got tired of seeing good small businesses stuck with bad websites."
       />
 
       <section className="py-24 px-6 max-w-3xl mx-auto">
@@ -39,16 +39,15 @@ export default function AboutPage() {
         </h2>
         <p className="text-gray-600 leading-relaxed mb-6">
           We started UnifiedOps because we kept seeing the same problem:
-          skilled contractors doing great work, but losing business to slow
-          websites, missed calls, and marketing that never got followed up
-          on. None of that is a skills problem — it&apos;s a systems problem,
-          and it&apos;s fixable.
+          good small businesses doing great work, held back by a website
+          that was slow, outdated, or never quite finished. That&apos;s not
+          a skills problem — it&apos;s usually just a matter of having
+          someone build it right the first time.
         </p>
         <p className="text-gray-600 leading-relaxed">
-          So we built UnifiedOps to be the systems layer for local trades — a
-          website that actually converts, automatic follow-up so no lead
-          gets missed, and marketing tools simple enough to use without a
-          marketing degree.
+          So we build simple, custom websites — designed around your
+          business, live on your own domain, with a straightforward price
+          and no long-term contract.
         </p>
       </section>
 

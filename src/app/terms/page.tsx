@@ -34,13 +34,11 @@ export default function TermsPage() {
               2. Our Services
             </h2>
             <p>
-              UnifiedOps builds and manages websites and marketing systems
-              for contractors and local service businesses, which may
-              include a website, missed call text back, marketing
-              campaigns, local SEO, review management, and a shared inbox,
-              as described on our{" "}
-              <a href="/products" className="text-blue-600 hover:underline">
-                Products
+              UnifiedOps designs and builds custom websites for small
+              businesses, with an optional ongoing care plan for hosting and
+              updates, as described on our{" "}
+              <a href="/pricing" className="text-blue-600 hover:underline">
+                Pricing
               </a>{" "}
               page.
             </p>
@@ -60,17 +58,18 @@ export default function TermsPage() {
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              4. Billing &amp; Subscription
+              4. Billing
             </h2>
             <p>
-              Our services are billed on a recurring monthly basis as
-              described on our{" "}
+              The website build is billed as a one-time, upfront fee. If you
+              choose an ongoing care plan, that portion is billed on a
+              recurring monthly basis as described on our{" "}
               <a href="/pricing" className="text-blue-600 hover:underline">
                 Pricing
               </a>{" "}
-              page. Subscriptions renew automatically each month until
-              canceled. You&apos;re responsible for all charges incurred
-              under your account.
+              page, and renews automatically each month until canceled.
+              You&apos;re responsible for all charges incurred under your
+              account.
             </p>
           </div>
 
@@ -79,11 +78,12 @@ export default function TermsPage() {
               5. Cancellation
             </h2>
             <p>
-              There are no long-term contracts. You may cancel at any time,
-              effective at the end of your current billing period. Upon
-              cancellation, access to your hosted website and automation
-              tools ends, though you keep your domain and any content we
-              export to you.
+              There&apos;s no contract on the website build itself — it&apos;s
+              a one-time purchase. A care plan can be canceled at any time,
+              effective at the end of your current billing period. If we
+              host your site as part of a care plan and it&apos;s canceled,
+              hosting ends, though you keep your domain and we&apos;ll
+              export your site&apos;s content to you.
             </p>
           </div>
 
@@ -102,44 +102,31 @@ export default function TermsPage() {
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              7. Text Messaging &amp; Communications Tools
-            </h2>
-            <p>
-              If your plan includes missed-call text back, review requests,
-              or marketing campaigns, you&apos;re responsible for using them
-              in compliance with applicable messaging and telemarketing
-              laws (such as obtaining proper consent from your own
-              customers before texting them).
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              8. Intellectual Property
+              7. Intellectual Property
             </h2>
             <p>
               Upon full payment, you own the content and branding created
               specifically for your website. UnifiedOps retains ownership of
-              our underlying tools, templates, software, and systems used to
-              deliver our services.
+              our underlying tools, templates, and processes used to deliver
+              our services.
             </p>
           </div>
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              9. Disclaimers
+              8. Disclaimers
             </h2>
             <p>
-              Our services are provided &quot;as is.&quot; While we work
-              hard to help your business grow, we don&apos;t guarantee
-              specific results, lead volume, or revenue, as those depend on
-              many factors outside our control.
+              Our services are provided &quot;as is.&quot; While we build
+              your site to a high standard, we don&apos;t guarantee
+              specific business results, traffic, or revenue, as those
+              depend on many factors outside our control.
             </p>
           </div>
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              10. Limitation of Liability
+              9. Limitation of Liability
             </h2>
             <p>
               To the fullest extent permitted by law, UnifiedOps will not be
@@ -152,7 +139,7 @@ export default function TermsPage() {
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              11. Termination
+              10. Termination
             </h2>
             <p>
               We may suspend or terminate your access to our services if you
@@ -162,7 +149,7 @@ export default function TermsPage() {
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              12. Changes to These Terms
+              11. Changes to These Terms
             </h2>
             <p>
               We may update these Terms from time to time. Continued use of
@@ -173,7 +160,7 @@ export default function TermsPage() {
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              13. Contact Us
+              12. Contact Us
             </h2>
             <p>
               Questions about these Terms? Reach out through our{" "}

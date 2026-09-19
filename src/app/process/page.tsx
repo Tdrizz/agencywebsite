@@ -10,22 +10,22 @@ const steps = [
   {
     title: "Discovery Call",
     description:
-      "A quick 20-minute call where we learn about your business, answer your questions, and walk you through exactly what we'd build — no pressure, no jargon.",
+      "A quick call where we learn about your business, answer your questions, and walk you through exactly what we'd build — no pressure, no jargon.",
   },
   {
-    title: "Onboarding & Buildout",
+    title: "Onboarding & Build",
     description:
-      "You fill out a short onboarding form with your business details, branding, and goals. We take it from there — your website and marketing systems are built and ready to go in about 7-10 days.",
+      "You share your business details, branding, and content. We take it from there — your site is designed and built around your business, usually live within a week or two.",
   },
   {
-    title: "Launch & Training",
+    title: "Launch",
     description:
-      "We walk you through your new site and tools on a live call, answer every question, and make sure you're confident running things day to day. It's simple — no degree required.",
+      "We deploy your site live on your domain, walk you through it, and make sure you're happy before we call it done.",
   },
   {
-    title: "Ongoing Support",
+    title: "Ongoing Care (Optional)",
     description:
-      "We're a call or text away for changes, questions, or tuning your marketing as your business grows. No contracts — we earn your business every month.",
+      "If you'd rather not manage hosting and small updates yourself, pick a care plan and we'll keep things running. No contract — cancel anytime.",
   },
 ];
 
@@ -35,7 +35,7 @@ export default function ProcessPage() {
       <PageHero
         eyebrow="Our Process"
         title="What working with us looks like"
-        subtitle="No long onboarding, no runaround — just a clear path from call to live system."
+        subtitle="No long onboarding, no runaround — just a clear path from call to live website."
       />
 
       <section className="py-24 px-6 max-w-4xl mx-auto">

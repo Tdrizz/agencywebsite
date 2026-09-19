@@ -22,11 +22,10 @@ export default function PrivacyPage() {
             </h2>
             <p>
               UnifiedOps (&quot;UnifiedOps,&quot; &quot;we,&quot;
-              &quot;us,&quot; or &quot;our&quot;) provides websites and
-              marketing systems for contractors and local service
-              businesses. This Privacy Policy explains what information we
-              collect from you as a visitor, prospective client, or client,
-              how we use it, and the choices you have.
+              &quot;us,&quot; or &quot;our&quot;) builds custom websites for
+              small businesses. This Privacy Policy explains what
+              information we collect from you as a visitor, prospective
+              client, or client, how we use it, and the choices you have.
             </p>
           </div>
 
@@ -50,15 +49,13 @@ export default function PrivacyPage() {
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              3. Text Messages &amp; Calls
+              3. Phone &amp; Email Communication
             </h2>
             <p>
-              If you provide your phone number, you may receive calls or
-              text messages from us related to your inquiry, onboarding, or
-              the services you&apos;ve signed up for. Message and data rates
-              may apply. You can opt out of text messages at any time by
-              replying &quot;STOP,&quot; and you can ask to be removed from
-              our call list at any time by telling us directly.
+              If you provide your phone number or email, we may contact you
+              about your inquiry, your website build, or your care plan if
+              you have one. You can ask to be removed from our contact list
+              at any time by telling us directly.
             </p>
           </div>
 
@@ -68,7 +65,7 @@ export default function PrivacyPage() {
             </h2>
             <ul className="list-disc pl-5 space-y-1">
               <li>To respond to inquiries and schedule calls</li>
-              <li>To build, deliver, and support the website and marketing systems you&apos;ve purchased</li>
+              <li>To build, deliver, and support the website (and care plan, if you have one) you&apos;ve purchased</li>
               <li>To send account, billing, or service-related communications</li>
               <li>To improve our website and services</li>
               <li>To comply with legal obligations</li>
