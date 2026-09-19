@@ -15,7 +15,7 @@ const steps = [
   {
     title: "Onboarding & Build",
     description:
-      "You share your business details, branding, and content. We take it from there — your site is designed and built around your business, usually live within a week or two.",
+      "You share your business details, branding, and content. We take it from there — your site is designed and built around your business, usually live within 3-5 business days.",
   },
   {
     title: "Launch",

@@ -50,7 +50,7 @@ const steps = [
   {
     title: "Launch",
     description:
-      "We deploy it live on your domain and walk you through it. Live within a week or two.",
+      "We deploy it live on your domain and walk you through it. Live within 3-5 business days.",
   },
 ];
 
@@ -80,7 +80,7 @@ export default function Home() {
             </div>
             <div className="flex flex-wrap gap-x-8 gap-y-3 mt-10 text-sm text-gray-500">
               <span>✓ No long-term contracts</span>
-              <span>✓ Live in a week or two</span>
+              <span>✓ Live in 3-5 business days</span>
               <span>✓ One flat price</span>
             </div>
           </div>
