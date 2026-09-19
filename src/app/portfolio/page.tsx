@@ -12,6 +12,7 @@ const projects = [
     industry: "Commercial Construction · Mat-Su Borough, AK",
     description:
       "A custom site for a commercial remodel and construction contractor. Clean design, mobile friendly, with a contact form that sends estimate requests straight to their inbox.",
+    url: "https://alamontbuilders.vercel.app",
   },
   {
     name: "In & Out Flooring",
@@ -36,9 +37,6 @@ export default function PortfolioPage() {
           {projects.map((project) => {
             return (
               <div key={project.name} className="service-card p-8">
-                <div className="h-56 rounded-xl bg-slate-100 border border-dashed border-slate-300 flex items-center justify-center text-slate-400 text-sm mb-6">
-                  Project screenshot
-                </div>
                 <div className="flex items-start justify-between gap-4 mb-1">
                   <h3 className="text-xl font-semibold heading-font">
                     {project.name}
