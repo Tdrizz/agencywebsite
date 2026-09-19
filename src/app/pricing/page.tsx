@@ -12,18 +12,21 @@ const buildFeatures = [
   "Mobile friendly on every device",
   "Working contact form so leads land in your inbox",
   "Deployed and live on your domain",
+  "First month of Basic hosting included",
 ];
 
 const carePlans = [
   {
     name: "Basic",
     price: "$25",
-    description: "Hosting and domain management, handled for you.",
+    description:
+      "Hosting and domain management, required for every site. First month is included in the build — then $25/month.",
     features: [
       "Hosting and domain management",
       "Uptime monitoring",
       "SSL and technical upkeep",
     ],
+    required: true,
   },
   {
     name: "Standard",
@@ -52,7 +55,7 @@ const faqs = [
   {
     question: "Is there a contract?",
     answer:
-      "The website build is a one-time cost. Care plans are month-to-month, cancel anytime.",
+      "The website build is a one-time cost, and it includes your first month of Basic hosting. After that, Basic is billed monthly since we host every site we build. Standard and Care Plan are optional upgrades on top of Basic, also month-to-month, cancel anytime.",
   },
   {
     question: "How fast can we launch?",
@@ -66,12 +69,12 @@ const faqs = [
   {
     question: "Can I cancel the monthly plan?",
     answer:
-      "Yes, anytime. Your site stays live through the end of the billing period, and you keep your domain either way.",
+      "You can drop down from Standard or Care Plan to Basic anytime. Since Basic covers hosting for the site we built, canceling it takes your site offline at the end of the billing period — you keep your domain either way.",
   },
   {
     question: "Do I need a care plan?",
     answer:
-      "No, it's optional. Some clients just want the build and handle hosting themselves. Most pick Standard so small updates don't pile up.",
+      "The Basic plan is required — we host every site we build, so it covers your hosting, domain, and technical upkeep. Your first month is included in the $800 build; it's $25/month after that. Standard and Care Plan are optional upgrades if you want us handling small updates too.",
   },
 ];
 
@@ -81,7 +84,7 @@ export default function PricingPage() {
       <PageHero
         eyebrow="Pricing"
         title="Simple, honest pricing"
-        subtitle="A one-time build, plus an optional plan to keep your site running."
+        subtitle="A one-time build with your first month of hosting included, then $25/month after that since we host every site we build. Standard and Care Plan are optional upgrades."
       />
 
       <section className="py-24 px-6 max-w-4xl mx-auto">
@@ -131,8 +134,10 @@ export default function PricingPage() {
             Keep your site running smoothly
           </h2>
           <p className="text-gray-600">
-            Once your site is live, pick a plan to handle hosting and keep
-            things up to date. Optional, and you can start or cancel anytime.
+            We host every site we build, so the Basic plan is required — your
+            first month is covered by the $800 build. Standard and Care Plan
+            add more support on top and are entirely optional — start or
+            cancel anytime.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
@@ -143,9 +148,20 @@ export default function PricingPage() {
                 plan.featured ? "border-2 border-blue-500" : ""
               }`}
             >
-              <h3 className="text-lg font-semibold mb-1 heading-font">
-                {plan.name}
-              </h3>
+              <div className="flex items-center justify-between gap-2 mb-1">
+                <h3 className="text-lg font-semibold heading-font">
+                  {plan.name}
+                </h3>
+                <span
+                  className={`text-xs font-semibold px-2.5 py-1 rounded-full ${
+                    plan.required
+                      ? "bg-blue-100 text-blue-700"
+                      : "bg-gray-100 text-gray-500"
+                  }`}
+                >
+                  {plan.required ? "Required" : "Optional"}
+                </span>
+              </div>
               <p className="text-gray-600 text-sm mb-5">{plan.description}</p>
               <p className="mb-6">
                 <span className="text-3xl font-extrabold heading-font">
@@ -176,8 +192,8 @@ export default function PricingPage() {
           ))}
         </div>
         <p className="text-center text-gray-500 text-sm mt-8 max-w-lg mx-auto">
-          No pressure on a plan. Most clients start with Standard and adjust
-          later.
+          Every site starts on Basic. No pressure to upgrade — you can move
+          to Standard or Care Plan anytime.
         </p>
       </section>
 
