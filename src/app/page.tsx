@@ -45,7 +45,7 @@ const steps = [
   {
     title: "We Build It",
     description:
-      "Your site is designed and built around your business — no templates that look like everyone else's.",
+      "Your site is designed and built around your business. No templates that look like everyone else's.",
   },
   {
     title: "Launch",
@@ -67,8 +67,8 @@ export default function Home() {
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-xl">
               UnifiedOps designs and builds custom websites for small
-              businesses — simple, fast, and live on your own domain. One
-              flat price, no long-term contract.
+              businesses: simple, fast, and live on your own domain. One
+              flat price, no contract.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="btn-primary">
@@ -79,7 +79,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="flex flex-wrap gap-x-8 gap-y-3 mt-10 text-sm text-gray-500">
-              <span>✓ No long-term contracts</span>
+              <span>✓ No contracts</span>
               <span>✓ Live in 3-5 business days</span>
               <span>✓ One flat price</span>
             </div>

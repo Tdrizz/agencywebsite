@@ -66,7 +66,7 @@ export default function PrivacyPage() {
             <ul className="list-disc pl-5 space-y-1">
               <li>To respond to inquiries and schedule calls</li>
               <li>To build, deliver, and support the website (and care plan, if you have one) you&apos;ve purchased</li>
-              <li>To send account, billing, or service-related communications</li>
+              <li>To send account, billing, or service updates</li>
               <li>To improve our website and services</li>
               <li>To comply with legal obligations</li>
             </ul>
@@ -148,12 +148,12 @@ export default function PrivacyPage() {
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              11. Third-Party Links
+              11. Links to Other Sites
             </h2>
             <p>
-              Our website may link to third-party sites. We are not
-              responsible for the privacy practices of those sites, and
-              encourage you to review their policies.
+              Our website may link to other sites. We are not responsible
+              for the privacy practices of those sites, and encourage you to
+              review their policies.
             </p>
           </div>
 

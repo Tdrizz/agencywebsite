@@ -10,12 +10,12 @@ const steps = [
   {
     title: "Discovery Call",
     description:
-      "A quick call where we learn about your business, answer your questions, and walk you through exactly what we'd build — no pressure, no jargon.",
+      "A quick call where we learn about your business, answer your questions, and walk you through exactly what we'd build. No pressure, no jargon.",
   },
   {
     title: "Onboarding & Build",
     description:
-      "You share your business details, branding, and content. We take it from there — your site is designed and built around your business, usually live within 3-5 business days.",
+      "You share your business details, branding, and content. We take it from there. Your site is designed and built around your business, usually live within 3-5 business days.",
   },
   {
     title: "Launch",
@@ -25,7 +25,7 @@ const steps = [
   {
     title: "Ongoing Care (Optional)",
     description:
-      "If you'd rather not manage hosting and small updates yourself, pick a care plan and we'll keep things running. No contract — cancel anytime.",
+      "If you'd rather not manage hosting and small updates yourself, pick a care plan and we'll keep things running. No contract, cancel anytime.",
   },
 ];
 
@@ -35,7 +35,7 @@ export default function ProcessPage() {
       <PageHero
         eyebrow="Our Process"
         title="What working with us looks like"
-        subtitle="No long onboarding, no runaround — just a clear path from call to live website."
+        subtitle="No long onboarding, no runaround. Just a clear path from call to live website."
       />
 
       <section className="py-24 px-6 max-w-4xl mx-auto">
@@ -61,7 +61,7 @@ export default function ProcessPage() {
 
       <CtaBand
         heading="Ready to get started?"
-        body="Book your discovery call — it takes 20 minutes."
+        body="Book your discovery call. It takes 20 minutes."
       />
     </>
   );

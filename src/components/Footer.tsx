@@ -20,7 +20,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-sm max-w-xs">
-            Custom websites for small businesses — simple pricing, no fluff.
+            Custom websites for small businesses. Simple pricing, no fluff.
           </p>
         </div>
         <div>
