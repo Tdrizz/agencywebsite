@@ -22,7 +22,7 @@ export default function ContactPage() {
             </label>
             <input
               type="text"
-              placeholder="Jane Contractor"
+              placeholder="Jane Smith"
               className="form-field"
             />
           </div>
