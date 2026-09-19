@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     question: "How fast can we launch?",
-    answer: "Most builds are live within a week or two after we get your details.",
+    answer: "Most builds are live within 3-5 business days after we get your details.",
   },
   {
     question: "What if I want more pages later?",
