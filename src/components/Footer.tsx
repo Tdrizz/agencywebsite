@@ -4,6 +4,7 @@ import Link from "next/link";
 const siteLinks = [
   { href: "/products", label: "Products" },
   { href: "/pricing", label: "Pricing" },
+  { href: "/portfolio", label: "Portfolio" },
   { href: "/trades", label: "Trades We Serve" },
   { href: "/process", label: "Our Process" },
   { href: "/about", label: "About" },
