@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const siteLinks = [
-  { href: "/products", label: "Marketing System" },
+  { href: "/products", label: "What's Included" },
   { href: "/pricing", label: "Pricing" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/trades", label: "Trades We Serve" },

@@ -3,7 +3,7 @@ import PageHero from "@/components/PageHero";
 import CtaBand from "@/components/CtaBand";
 
 export const metadata: Metadata = {
-  title: "Marketing System | UnifiedOps",
+  title: "What's Included | UnifiedOps",
 };
 
 const products = [
@@ -83,9 +83,9 @@ export default function ProductsPage() {
   return (
     <>
       <PageHero
-        eyebrow="Marketing System"
-        title="Everything a contractor needs, in one system"
-        subtitle="Six tools, working together, built specifically for how contractors get and keep customers. Included in the $297/month plan."
+        eyebrow="What's Included"
+        title="Everything a contractor needs, in one plan"
+        subtitle="Your website plus six tools, working together, all included in your monthly plan after the $500 setup."
       />
 
       <section className="py-24 px-6 max-w-5xl mx-auto space-y-16">

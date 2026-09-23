@@ -34,12 +34,11 @@ export default function TermsPage() {
               2. Our Services
             </h2>
             <p>
-              UnifiedOps offers two ways to work with us: a one time website
-              build with an optional ongoing care plan for hosting and
-              updates, or a monthly marketing system that bundles a website
-              with tools like missed call text back, review management, one
-              click marketing campaigns, local SEO, and a shared inbox. Both
-              are described on our{" "}
+              UnifiedOps builds a custom website and pairs it with an
+              ongoing marketing system: missed call text back, review
+              management, one click marketing campaigns, local SEO, and a
+              shared inbox. Hosting tiers and full pricing are described on
+              our{" "}
               <a href="/pricing" className="text-blue-600 hover:underline">
                 Pricing
               </a>{" "}
@@ -64,17 +63,15 @@ export default function TermsPage() {
               4. Billing
             </h2>
             <p>
-              The website build is billed as a single upfront fee. If you
-              choose an ongoing care plan, that portion is billed on a
-              recurring monthly basis. The marketing system is billed
-              monthly from the start, with no upfront build fee. Both are
-              described on our{" "}
+              Getting started costs a single upfront setup fee, described on
+              our{" "}
               <a href="/pricing" className="text-blue-600 hover:underline">
                 Pricing
               </a>{" "}
-              page, and monthly plans renew automatically until canceled.
-              You&apos;re responsible for all charges incurred under your
-              account.
+              page. Your first month of the monthly plan is included in
+              that fee. After that, the monthly plan renews automatically
+              until canceled. You&apos;re responsible for all charges
+              incurred under your account.
             </p>
           </div>
 
@@ -83,12 +80,12 @@ export default function TermsPage() {
               5. Cancellation
             </h2>
             <p>
-              There&apos;s no contract on the website build itself. It&apos;s
-              a single purchase. A care plan can be canceled at any time,
-              effective at the end of your current billing period. If we
-              host your site as part of a care plan and it&apos;s canceled,
-              hosting ends, though you keep your domain and we&apos;ll
-              export your site&apos;s content to you.
+              The setup fee is a single, non refundable purchase. The
+              monthly plan can be canceled at any time, effective at the
+              end of your current billing period. Since we host your site
+              as part of the plan, canceling ends hosting, though you keep
+              your domain and we&apos;ll export your site&apos;s content to
+              you.
             </p>
           </div>
 
