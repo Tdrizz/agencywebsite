@@ -15,7 +15,7 @@ const values = [
   {
     title: "No fluff, no contracts",
     description:
-      "One flat price for the build. If you want ongoing care, it's billed monthly, cancel anytime. Straight talk, straightforward pricing.",
+      "One setup fee, then one monthly plan. Straight talk, straightforward pricing, cancel anytime.",
   },
   {
     title: "Built around your business",
@@ -45,11 +45,11 @@ export default function AboutPage() {
           someone build it right the first time.
         </p>
         <p className="text-gray-600 leading-relaxed">
-          So we build simple, custom websites designed around your
-          business, live on your own domain, with a straightforward price
-          and no contract. For businesses that want more, our marketing
-          system bundles the website with tools like missed call text
-          back, review management, and local SEO, all in one monthly plan.
+          So we build a simple, custom website designed around your
+          business, live on your own domain, and pair it with a full
+          marketing system: missed call text back, review management, and
+          local SEO, all in one monthly plan after a straightforward setup
+          fee.
         </p>
       </section>
 

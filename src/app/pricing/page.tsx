@@ -7,12 +7,15 @@ export const metadata: Metadata = {
   title: "Pricing | UnifiedOps",
 };
 
-const buildFeatures = [
-  "Custom design built around your business, not a template",
-  "Mobile friendly on every device",
-  "Working contact form so leads land in your inbox",
-  "Deployed and live on your domain",
-  "First month of Basic hosting included",
+const coreFeatures = [
+  "Custom website built around your business",
+  "Automated lead follow up",
+  "Missed call text back",
+  "Review management",
+  "One click marketing campaigns",
+  "Local SEO",
+  "All in one inbox",
+  "Hosting and domain management",
 ];
 
 const carePlans = [
@@ -20,7 +23,7 @@ const carePlans = [
     name: "Basic",
     price: "$25",
     description:
-      "Hosting and domain management, required for every website build. First month is included in the build, then $25/month.",
+      "Hosting and domain management, included in your monthly total by default.",
     features: [
       "Hosting and domain management",
       "Uptime monitoring",
@@ -51,30 +54,21 @@ const carePlans = [
   },
 ];
 
-const marketingFeatures = [
-  "Functional website (10-20 pages)",
-  "Automated lead follow up",
-  "Missed call text back",
-  "Review management",
-  "One click marketing campaigns",
-  "Local SEO",
-  "All in one inbox",
-];
-
 const faqs = [
   {
-    question: "What's the difference between the website build and the marketing system?",
+    question: "What does the $500 setup cover?",
     answer:
-      "The $800 build is a single flat fee for a custom website that you own, with an optional care plan for hosting and small updates starting at $25/month. The $297/month marketing system bundles a website with ongoing tools like missed call text back, review requests, and local SEO. No large upfront cost, cancel anytime.",
+      "Your custom website build and onboarding into the marketing system: missed call text back, review management, one click marketing campaigns, local SEO, and the shared inbox. Your first month, $300 marketing plus $25 Basic hosting, is free, so nothing else is due until month two.",
   },
   {
-    question: "Is there a contract on the website build?",
+    question: "Is there a contract?",
     answer:
-      "The website build is billed once, and it includes your first month of Basic hosting. After that, Basic is billed monthly since we host every site we build. Standard and Care Plan are optional upgrades on top of Basic, also billed monthly, cancel anytime.",
+      "No. After the $500 setup, everything is billed monthly and you can cancel anytime.",
   },
   {
-    question: "Is there a contract on the marketing system?",
-    answer: "No. The marketing system is billed monthly, cancel anytime.",
+    question: "How much is it after the first month?",
+    answer:
+      "$300 a month for the marketing system, plus your hosting tier. Basic hosting is $25 a month, so most clients pay $325 a month starting in month two.",
   },
   {
     question: "How fast can we launch?",
@@ -86,17 +80,17 @@ const faqs = [
       "That's a quick addition. Extra pages like a services page, testimonials, or a blog are quoted separately once we know what you need.",
   },
   {
-    question: "Can I cancel the monthly website care plan?",
+    question: "Can I cancel?",
     answer:
-      "You can drop down from Standard or Care Plan to Basic anytime. Since Basic covers hosting for the site we built, canceling it takes your site offline at the end of the billing period. You keep your domain either way.",
+      "Yes, anytime. Your site stays live through the end of your current billing period, and you keep your domain either way.",
   },
   {
-    question: "Do I need a care plan for the website build?",
+    question: "Do I need Standard or Care Plan?",
     answer:
-      "The Basic plan is required. We host every site we build, so it covers your hosting, domain, and technical upkeep. Your first month is included in the $800 build, and it's $25/month after that. Standard and Care Plan are optional upgrades if you want us handling small updates too.",
+      "No, they're optional upgrades on top of Basic hosting if you want us handling small updates or giving your site priority attention. Most clients start on Basic and upgrade later if they need to.",
   },
   {
-    question: "What if I want more than the marketing system's core plan?",
+    question: "What if I want more than the core plan?",
     answer:
       "Google Business Profile optimization, advanced SEO, and paid ad management are available as additions for businesses that want to grow faster. We'll go over what makes sense for you on your call.",
   },
@@ -107,37 +101,30 @@ export default function PricingPage() {
     <>
       <PageHero
         eyebrow="Pricing"
-        title="Two ways to work with us"
-        subtitle="A single flat fee website build, or an all in one monthly marketing system. Pick whichever fits your business."
+        title="Simple, all included pricing"
+        subtitle="$500 to get started, with your first month free. Then $300 a month plus hosting."
       />
 
-      <section className="pt-24 pb-8 px-6 max-w-4xl mx-auto text-center">
-        <span className="eyebrow">Option 1</span>
-        <h2 className="heading-font text-3xl md:text-4xl font-bold mt-5 mb-4">
-          Website Build
-        </h2>
-        <p className="text-gray-600 max-w-xl mx-auto">
-          A custom website you own outright, for a single flat fee.
-        </p>
-      </section>
-
-      <section className="pb-24 px-6 max-w-4xl mx-auto">
+      <section className="py-24 px-6 max-w-4xl mx-auto">
         <div className="pricing-card p-10 max-w-md mx-auto">
           <span className="pricing-badge absolute -top-4 left-1/2 -translate-x-1/2">
-            Website Build
+            All Included
           </span>
           <h3 className="text-xl font-bold mb-1 text-center heading-font">
-            Custom Website
+            UnifiedOps Core
           </h3>
           <p className="text-center text-slate-400 text-sm mb-6">
-            A site built for your business, live and ready to send customers to
+            Your website, built and launched, plus the full marketing system
           </p>
-          <p className="text-center mb-8">
-            <span className="text-5xl font-extrabold heading-font">$800</span>
-            <span className="text-slate-400"> one time</span>
+          <p className="text-center mb-1">
+            <span className="text-5xl font-extrabold heading-font">$500</span>
+            <span className="text-slate-400"> to start</span>
+          </p>
+          <p className="text-center text-slate-400 text-sm mb-8">
+            First month free, then $300/month plus $25/month Basic hosting
           </p>
           <ul className="space-y-4 mb-9">
-            {buildFeatures.map((feature) => (
+            {coreFeatures.map((feature) => (
               <li key={feature} className="flex items-start gap-3">
                 <span className="check-dot">
                   <svg
@@ -159,19 +146,25 @@ export default function PricingPage() {
             Get Started
           </Link>
         </div>
+        <p className="text-center text-gray-500 text-sm mt-8">
+          See how each tool works on the{" "}
+          <Link href="/products" className="text-blue-600 hover:underline">
+            what&apos;s included page
+          </Link>
+          .
+        </p>
       </section>
 
       <section className="py-4 px-6 max-w-6xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <span className="eyebrow">Ongoing Care</span>
+          <span className="eyebrow">Hosting Tier</span>
           <h2 className="heading-font text-3xl md:text-4xl font-bold mt-5 mb-4">
-            Keep your site running smoothly
+            Choose how much support you want
           </h2>
           <p className="text-gray-600">
-            We host every site we build, so the Basic plan is required, and
-            your first month is covered by the $800 build. Standard and Care
-            Plan add more support on top and are entirely optional. Start or
-            cancel anytime.
+            Every plan includes the $300/month marketing system plus a
+            hosting tier. Basic is the default and is included in your
+            monthly total. Standard and Care Plan are optional upgrades.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
@@ -193,15 +186,18 @@ export default function PricingPage() {
                       : "bg-gray-100 text-gray-500"
                   }`}
                 >
-                  {plan.required ? "Required" : "Optional"}
+                  {plan.required ? "Default" : "Optional"}
                 </span>
               </div>
               <p className="text-gray-600 text-sm mb-5">{plan.description}</p>
-              <p className="mb-6">
+              <p className="mb-1">
                 <span className="text-3xl font-extrabold heading-font">
                   {plan.price}
                 </span>
                 <span className="text-gray-500 text-sm">/month</span>
+              </p>
+              <p className="text-gray-400 text-xs mb-6">
+                $300 marketing + {plan.price} hosting
               </p>
               <ul className="space-y-3">
                 {plan.features.map((feature) => (
@@ -226,66 +222,8 @@ export default function PricingPage() {
           ))}
         </div>
         <p className="text-center text-gray-500 text-sm mt-8 max-w-lg mx-auto">
-          Every site starts on Basic. No pressure to upgrade. You can move
+          Every plan starts on Basic. No pressure to upgrade. You can move
           to Standard or Care Plan anytime.
-        </p>
-      </section>
-
-      <section className="pt-24 pb-8 px-6 max-w-4xl mx-auto text-center">
-        <span className="eyebrow">Option 2</span>
-        <h2 className="heading-font text-3xl md:text-4xl font-bold mt-5 mb-4">
-          Marketing System
-        </h2>
-        <p className="text-gray-600 max-w-xl mx-auto">
-          Everything a contractor needs to get and keep customers, bundled
-          into one monthly plan. No upfront build cost.
-        </p>
-      </section>
-
-      <section className="pb-24 px-6 max-w-4xl mx-auto">
-        <div className="pricing-card p-10 max-w-md mx-auto">
-          <span className="pricing-badge absolute -top-4 left-1/2 -translate-x-1/2">
-            Most Popular
-          </span>
-          <h3 className="text-xl font-bold mb-1 text-center heading-font">
-            UnifiedOps Core
-          </h3>
-          <p className="text-center text-slate-400 text-sm mb-6">
-            Everything a contractor needs to grow
-          </p>
-          <p className="text-center mb-8">
-            <span className="text-5xl font-extrabold heading-font">$297</span>
-            <span className="text-slate-400">/month</span>
-          </p>
-          <ul className="space-y-4 mb-9">
-            {marketingFeatures.map((feature) => (
-              <li key={feature} className="flex items-start gap-3">
-                <span className="check-dot">
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="3"
-                  >
-                    <path d="M20 6 9 17l-5-5" />
-                  </svg>
-                </span>
-                <span className="text-slate-200 text-sm">{feature}</span>
-              </li>
-            ))}
-          </ul>
-          <Link href="/contact" className="btn-primary w-full">
-            Book a Call
-          </Link>
-        </div>
-        <p className="text-center text-gray-500 text-sm mt-8 max-w-lg mx-auto">
-          See how each tool works on the{" "}
-          <Link href="/products" className="text-blue-600 hover:underline">
-            marketing system page
-          </Link>
-          .
         </p>
       </section>
 
@@ -308,7 +246,7 @@ export default function PricingPage() {
 
       <CtaBand
         heading="Ready to get started?"
-        body="Tell us about your business and we'll show you what fits best."
+        body="Tell us about your business and we'll show you what we'd build."
       />
     </>
   );
