@@ -39,9 +39,8 @@ const carePlans = [
       "For businesses that want their site to stay current without lifting a finger.",
     features: [
       "Everything in Basic",
-      "Up to 2 content updates a month",
-      "New photos, hours, or contact info kept current",
-      "No waiting on a developer for small changes",
+      "Up to 2 updates a month, like new photos, hours, or contact info",
+      "Just send us what to change and we'll take care of it",
     ],
     featured: true,
     badge: "Most Popular",
