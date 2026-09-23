@@ -49,7 +49,7 @@ const carePlans = [
     features: [
       "Everything in Standard",
       "Priority turnaround within 48 hours",
-      "Quarterly review of messaging and search visibility",
+      "Quarterly review of your website",
     ],
   },
 ];
