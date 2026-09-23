@@ -23,34 +23,42 @@ const carePlans = [
     name: "Basic",
     price: "$25",
     description:
-      "Hosting and domain management, included in your monthly total by default.",
+      "Hosting and domain management, so your site stays online and secure.",
     features: [
       "Hosting and domain management",
       "Uptime monitoring",
       "SSL and technical upkeep",
     ],
     required: true,
+    badge: "Included",
   },
   {
     name: "Standard",
     price: "$50",
-    description: "Everything in Basic, plus small updates when you need them.",
+    description:
+      "For businesses that want their site to stay current without lifting a finger.",
     features: [
       "Everything in Basic",
       "Up to 2 content updates a month",
-      "New photos, hours, or contact info",
+      "New photos, hours, or contact info kept current",
+      "No waiting on a developer for small changes",
     ],
     featured: true,
+    badge: "Most Popular",
   },
   {
     name: "Care Plan",
     price: "$100",
-    description: "Priority support and a regular review of your site.",
+    description:
+      "White glove care for businesses that treat their website as a growth engine, not an afterthought.",
     features: [
       "Everything in Standard",
       "Priority turnaround within 48 hours",
       "Quarterly review of your website",
+      "A direct line to us for anything urgent",
     ],
+    premium: true,
+    badge: "Best Value",
   },
 ];
 
@@ -87,7 +95,7 @@ const faqs = [
   {
     question: "Do I need Standard or Care Plan?",
     answer:
-      "No, they're optional upgrades on top of Basic hosting if you want us handling small updates or giving your site priority attention. Most clients start on Basic and upgrade later if they need to.",
+      "No, they're optional upgrades on top of Basic hosting. Standard is popular with businesses that want small updates handled for them without asking. Care Plan is best if you want your site treated as a priority, with fast turnaround and a regular check in. Most clients start on Basic and upgrade once they see the difference.",
   },
   {
     question: "What if I want more than the core plan?",
@@ -159,35 +167,45 @@ export default function PricingPage() {
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="eyebrow">Hosting Tier</span>
           <h2 className="heading-font text-3xl md:text-4xl font-bold mt-5 mb-4">
-            Choose how much support you want
+            Get more done for you
           </h2>
           <p className="text-gray-600">
             Every plan includes the $300/month marketing system plus a
-            hosting tier. Basic is the default and is included in your
-            monthly total. Standard and Care Plan are optional upgrades.
+            hosting tier. Basic keeps you online. Standard and Care Plan
+            keep your site current and give it real attention, without you
+            having to think about it.
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-6 items-start">
           {carePlans.map((plan) => (
             <div
               key={plan.name}
-              className={`service-card p-7 ${
-                plan.featured ? "border-2 border-blue-500" : ""
+              className={`service-card p-7 relative ${
+                plan.featured
+                  ? "border-2 border-blue-500 md:-translate-y-2 shadow-lg"
+                  : plan.premium
+                  ? "border-2 border-amber-400"
+                  : ""
               }`}
             >
+              {(plan.featured || plan.premium) && (
+                <span
+                  className={`absolute -top-3 left-1/2 -translate-x-1/2 text-xs font-semibold px-3 py-1 rounded-full text-white ${
+                    plan.featured ? "bg-blue-600" : "bg-amber-500"
+                  }`}
+                >
+                  {plan.badge}
+                </span>
+              )}
               <div className="flex items-center justify-between gap-2 mb-1">
                 <h3 className="text-lg font-semibold heading-font">
                   {plan.name}
                 </h3>
-                <span
-                  className={`text-xs font-semibold px-2.5 py-1 rounded-full ${
-                    plan.required
-                      ? "bg-blue-100 text-blue-700"
-                      : "bg-gray-100 text-gray-500"
-                  }`}
-                >
-                  {plan.required ? "Default" : "Optional"}
-                </span>
+                {plan.required && (
+                  <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-100 text-blue-700">
+                    {plan.badge}
+                  </span>
+                )}
               </div>
               <p className="text-gray-600 text-sm mb-5">{plan.description}</p>
               <p className="mb-1">
@@ -222,8 +240,9 @@ export default function PricingPage() {
           ))}
         </div>
         <p className="text-center text-gray-500 text-sm mt-8 max-w-lg mx-auto">
-          Every plan starts on Basic. No pressure to upgrade. You can move
-          to Standard or Care Plan anytime.
+          Every plan starts on Basic, and you can move to Standard or Care
+          Plan anytime. Most clients upgrade once they see how much time it
+          saves them.
         </p>
       </section>
 
