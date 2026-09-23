@@ -22,10 +22,11 @@ export default function PrivacyPage() {
             </h2>
             <p>
               UnifiedOps (&quot;UnifiedOps,&quot; &quot;we,&quot;
-              &quot;us,&quot; or &quot;our&quot;) builds custom websites for
-              small businesses. This Privacy Policy explains what
-              information we collect from you as a visitor, prospective
-              client, or client, how we use it, and the choices you have.
+              &quot;us,&quot; or &quot;our&quot;) builds custom websites and
+              marketing systems for small businesses. This Privacy Policy
+              explains what information we collect from you as a visitor,
+              prospective client, or client, how we use it, and the choices
+              you have.
             </p>
           </div>
 

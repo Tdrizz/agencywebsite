@@ -47,7 +47,9 @@ export default function AboutPage() {
         <p className="text-gray-600 leading-relaxed">
           So we build simple, custom websites designed around your
           business, live on your own domain, with a straightforward price
-          and no contract.
+          and no contract. For businesses that want more, our marketing
+          system bundles the website with tools like missed call text
+          back, review management, and local SEO, all in one monthly plan.
         </p>
       </section>
 
