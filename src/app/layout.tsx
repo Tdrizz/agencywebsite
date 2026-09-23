@@ -17,9 +17,9 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "UnifiedOps | Websites for Small Businesses",
+  title: "UnifiedOps | Websites & Marketing Systems for Small Businesses",
   description:
-    "UnifiedOps builds simple, custom websites for small businesses. A single flat fee to build, live on your domain, with an optional plan to keep it running.",
+    "UnifiedOps builds simple, custom websites for small businesses. Choose a single flat fee website build or an all in one monthly marketing system with missed call text back, review management, and local SEO.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -61,14 +61,15 @@ export default function Home() {
       <section className="hero-bg px-6 pt-20 pb-24">
         <div className="max-w-6xl mx-auto relative grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="eyebrow">Websites for small businesses</span>
+            <span className="eyebrow">Websites and marketing for small businesses</span>
             <h1 className="heading-font text-5xl font-extrabold leading-tight mt-6 mb-6">
               A website built for your business, not a template
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-xl">
               UnifiedOps designs and builds custom websites for small
-              businesses: simple, fast, and live on your own domain. One
-              flat price, no contract.
+              businesses: simple, fast, and live on your own domain. Get a
+              site built once for a flat fee, or an all in one monthly
+              marketing system. Either way, no long contract.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="btn-primary">
@@ -79,9 +80,9 @@ export default function Home() {
               </Link>
             </div>
             <div className="flex flex-wrap gap-x-8 gap-y-3 mt-10 text-sm text-gray-500">
-              <span>✓ No contracts</span>
+              <span>✓ No long contracts</span>
               <span>✓ Live in 3-5 business days</span>
-              <span>✓ One flat price</span>
+              <span>✓ Two ways to work with us</span>
             </div>
           </div>
 
@@ -143,19 +144,52 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing Teaser */}
-      <section className="py-24 px-6 max-w-4xl mx-auto text-center">
-        <span className="eyebrow">Pricing</span>
-        <h2 className="heading-font text-3xl md:text-4xl font-bold mt-5 mb-4">
-          One flat price to get live
-        </h2>
-        <p className="text-gray-600 mb-8 max-w-xl mx-auto">
-          A custom website, built once, with an optional plan to keep it
-          running after that.
-        </p>
-        <Link href="/pricing" className="btn-primary">
-          See Pricing
-        </Link>
+      {/* Two Offerings */}
+      <section className="py-24 px-6 max-w-6xl mx-auto">
+        <div className="text-center max-w-2xl mx-auto mb-14">
+          <span className="eyebrow">Pricing</span>
+          <h2 className="heading-font text-3xl md:text-4xl font-bold mt-5 mb-4">
+            Two ways to work with us
+          </h2>
+          <p className="text-gray-600">
+            Pick a single flat fee build, an all in one monthly plan, or ask us
+            which fits your business.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="service-card p-8">
+            <h3 className="text-xl font-semibold mb-2 heading-font">
+              Website Build
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed mb-4">
+              A custom website you own outright, built once for a flat fee.
+              Optional care plans keep it hosted and updated after that.
+            </p>
+            <p className="mb-4">
+              <span className="text-3xl font-extrabold heading-font">$800</span>
+              <span className="text-gray-500 text-sm"> one time</span>
+            </p>
+            <Link href="/pricing" className="btn-secondary">
+              See Pricing
+            </Link>
+          </div>
+          <div className="service-card p-8">
+            <h3 className="text-xl font-semibold mb-2 heading-font">
+              Marketing System
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed mb-4">
+              A website plus missed call text back, review management, local
+              SEO, and more, bundled into one monthly plan.
+            </p>
+            <p className="mb-4">
+              <span className="text-3xl font-extrabold heading-font">$297</span>
+              <span className="text-gray-500 text-sm">/month</span>
+            </p>
+            <Link href="/products" className="btn-secondary">
+              See What&apos;s Included
+            </Link>
+          </div>
+        </div>
       </section>
 
       <CtaBand

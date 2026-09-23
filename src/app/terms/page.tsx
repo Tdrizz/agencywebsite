@@ -34,9 +34,12 @@ export default function TermsPage() {
               2. Our Services
             </h2>
             <p>
-              UnifiedOps designs and builds custom websites for small
-              businesses, with an optional ongoing care plan for hosting and
-              updates, as described on our{" "}
+              UnifiedOps offers two ways to work with us: a one time website
+              build with an optional ongoing care plan for hosting and
+              updates, or a monthly marketing system that bundles a website
+              with tools like missed call text back, review management, one
+              click marketing campaigns, local SEO, and a shared inbox. Both
+              are described on our{" "}
               <a href="/pricing" className="text-blue-600 hover:underline">
                 Pricing
               </a>{" "}
@@ -63,11 +66,13 @@ export default function TermsPage() {
             <p>
               The website build is billed as a single upfront fee. If you
               choose an ongoing care plan, that portion is billed on a
-              recurring monthly basis as described on our{" "}
+              recurring monthly basis. The marketing system is billed
+              monthly from the start, with no upfront build fee. Both are
+              described on our{" "}
               <a href="/pricing" className="text-blue-600 hover:underline">
                 Pricing
               </a>{" "}
-              page, and renews automatically each month until canceled.
+              page, and monthly plans renew automatically until canceled.
               You&apos;re responsible for all charges incurred under your
               account.
             </p>
@@ -102,7 +107,20 @@ export default function TermsPage() {
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              7. Intellectual Property
+              7. Text Messaging and Communications Tools
+            </h2>
+            <p>
+              If your plan includes missed call text back, review requests,
+              or marketing campaigns, you&apos;re responsible for using them
+              in compliance with applicable messaging and telemarketing
+              laws, including obtaining proper consent from your own
+              customers before texting them.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
+              8. Intellectual Property
             </h2>
             <p>
               Upon full payment, you own the content and branding created
@@ -114,7 +132,7 @@ export default function TermsPage() {
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              8. Disclaimers
+              9. Disclaimers
             </h2>
             <p>
               Our services are provided &quot;as is.&quot; While we build
@@ -126,7 +144,7 @@ export default function TermsPage() {
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              9. Limitation of Liability
+              10. Limitation of Liability
             </h2>
             <p>
               To the fullest extent permitted by law, UnifiedOps will not be
@@ -139,7 +157,7 @@ export default function TermsPage() {
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              10. Termination
+              11. Termination
             </h2>
             <p>
               We may suspend or terminate your access to our services if you
@@ -149,7 +167,7 @@ export default function TermsPage() {
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              11. Changes to These Terms
+              12. Changes to These Terms
             </h2>
             <p>
               We may update these Terms from time to time. Continued use of
@@ -160,7 +178,7 @@ export default function TermsPage() {
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              12. Contact Us
+              13. Contact Us
             </h2>
             <p>
               Questions about these Terms? Reach out through our{" "}
