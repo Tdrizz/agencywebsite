@@ -65,7 +65,7 @@ const faqs = [
   {
     question: "What does the $500 setup cover?",
     answer:
-      "Your custom website build and onboarding into the marketing system: missed call text back, review management, one click marketing campaigns, local SEO, and the shared inbox. Your first month, $300 marketing plus $25 Basic hosting, is free, so nothing else is due until month two.",
+      "Your custom website build and onboarding into the marketing system: missed call text back, review management, one click marketing campaigns, local SEO, and the shared inbox. It also includes your first month, so nothing else is due until month two.",
   },
   {
     question: "Is there a contract?",
@@ -109,7 +109,7 @@ export default function PricingPage() {
       <PageHero
         eyebrow="Pricing"
         title="Simple, all included pricing"
-        subtitle="$500 to get started, with your first month free. Then $300 a month plus hosting."
+        subtitle="$500 to get started, first month included. Then $325 a month for the marketing system and hosting."
       />
 
       <section className="py-24 px-6 max-w-4xl mx-auto">
@@ -128,7 +128,8 @@ export default function PricingPage() {
             <span className="text-slate-400"> to start</span>
           </p>
           <p className="text-center text-slate-400 text-sm mb-8">
-            First month free, then $300/month plus $25/month Basic hosting
+            Your first month is included. After that, $325/month total
+            ($300 marketing system + $25 Basic hosting).
           </p>
           <ul className="space-y-4 mb-9">
             {coreFeatures.map((feature) => (
