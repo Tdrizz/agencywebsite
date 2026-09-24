@@ -82,7 +82,7 @@ export default function Home() {
             <div className="flex flex-wrap gap-x-8 gap-y-3 mt-10 text-sm text-gray-500">
               <span>✓ No long contracts</span>
               <span>✓ Live in 3-5 business days</span>
-              <span>✓ First month free</span>
+              <span>✓ First month included</span>
             </div>
           </div>
 
@@ -158,7 +158,8 @@ export default function Home() {
           <span className="text-4xl font-extrabold heading-font">$500</span>
           <span className="text-gray-500"> to start</span>
           <span className="text-gray-400 text-sm block mt-1">
-            First month free, then $300/month plus hosting
+            First month included. Then $325/month for the marketing
+            system and hosting.
           </span>
         </p>
         <Link href="/pricing" className="btn-primary">
