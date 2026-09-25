@@ -156,7 +156,7 @@ export default function PricingPage() {
         </div>
         <p className="text-center text-gray-500 text-sm mt-8">
           See how each tool works on the{" "}
-          <Link href="/products" className="text-blue-600 hover:underline">
+          <Link href="/products" className="text-green-700 hover:underline">
             what&apos;s included page
           </Link>
           .
@@ -182,7 +182,7 @@ export default function PricingPage() {
               key={plan.name}
               className={`service-card p-7 relative ${
                 plan.featured
-                  ? "border-2 border-blue-500 md:-translate-y-2 shadow-lg"
+                  ? "border-2 border-green-600 md:-translate-y-2 shadow-lg"
                   : plan.premium
                   ? "border-2 border-amber-400"
                   : ""
@@ -191,7 +191,7 @@ export default function PricingPage() {
               {(plan.featured || plan.premium) && (
                 <span
                   className={`absolute -top-3 left-1/2 -translate-x-1/2 text-xs font-semibold px-3 py-1 rounded-full text-white ${
-                    plan.featured ? "bg-blue-600" : "bg-amber-500"
+                    plan.featured ? "bg-green-700" : "bg-amber-500"
                   }`}
                 >
                   {plan.badge}
@@ -202,7 +202,7 @@ export default function PricingPage() {
                   {plan.name}
                 </h3>
                 {plan.required && (
-                  <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-100 text-blue-700">
+                  <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-green-100 text-green-800">
                     {plan.badge}
                   </span>
                 )}

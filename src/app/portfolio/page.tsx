@@ -46,7 +46,7 @@ export default function PortfolioPage() {
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="shrink-0 inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:underline"
+                      className="shrink-0 inline-flex items-center gap-1.5 text-sm font-semibold text-green-700 hover:underline"
                     >
                       View Live Site
                       <svg
@@ -63,7 +63,7 @@ export default function PortfolioPage() {
                     </a>
                   )}
                 </div>
-                <p className="text-sm text-blue-600 font-medium mb-3">
+                <p className="text-sm text-green-700 font-medium mb-3">
                   {project.industry}
                 </p>
                 <p className="text-gray-600 text-sm leading-relaxed">
