@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Logo from "./Logo";
 
 const links = [
   { href: "/products", label: "What's Included" },
@@ -21,16 +21,16 @@ export default function Nav() {
   return (
     <nav className="site-nav">
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-        <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <Image src="/logo.svg" alt="UnifiedOps" width={34} height={34} className="rounded-[9px]" />
-          <span className="text-lg font-bold heading-font tracking-tight">
-            UnifiedOps
-          </span>
-        </Link>
+        <Logo
+          theme="light"
+          size={26}
+          showDivider={false}
+          onClick={() => setOpen(false)}
+        />
         <ul className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
           {links.map((link) => (
             <li key={link.href}>
-              <Link href={link.href} className="hover:text-blue-600">
+              <Link href={link.href} className="hover:text-green-700">
                 {link.label}
               </Link>
             </li>
@@ -74,7 +74,7 @@ export default function Nav() {
                   href={link.href}
                   onClick={() => setOpen(false)}
                   className={`block py-2.5 ${
-                    pathname === link.href ? "text-blue-600" : "hover:text-blue-600"
+                    pathname === link.href ? "text-green-700" : "hover:text-green-700"
                   }`}
                 >
                   {link.label}

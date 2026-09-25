@@ -176,7 +176,7 @@ export default function PrivacyPage() {
             <p>
               If you have questions about this Privacy Policy or want to
               exercise your privacy rights, reach out to us through our{" "}
-              <a href="/contact" className="text-blue-600 hover:underline">
+              <a href="/contact" className="text-green-700 hover:underline">
                 contact page
               </a>
               .

@@ -58,7 +58,7 @@ export default function TradesPage() {
           most other local trade and home service businesses.
         </p>
         <p className="text-center mt-8">
-          <Link href="/contact" className="text-blue-600 font-semibold hover:underline">
+          <Link href="/contact" className="text-green-700 font-semibold hover:underline">
             Don&apos;t see your trade? Ask us on a call →
           </Link>
         </p>

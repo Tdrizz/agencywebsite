@@ -39,7 +39,7 @@ export default function TermsPage() {
               management, one click marketing campaigns, local SEO, and a
               shared inbox. Hosting tiers and full pricing are described on
               our{" "}
-              <a href="/pricing" className="text-blue-600 hover:underline">
+              <a href="/pricing" className="text-green-700 hover:underline">
                 Pricing
               </a>{" "}
               page.
@@ -65,7 +65,7 @@ export default function TermsPage() {
             <p>
               Getting started costs a single upfront setup fee, described on
               our{" "}
-              <a href="/pricing" className="text-blue-600 hover:underline">
+              <a href="/pricing" className="text-green-700 hover:underline">
                 Pricing
               </a>{" "}
               page. Your first month of the monthly plan is included in
@@ -179,7 +179,7 @@ export default function TermsPage() {
             </h2>
             <p>
               Questions about these Terms? Reach out through our{" "}
-              <a href="/contact" className="text-blue-600 hover:underline">
+              <a href="/contact" className="text-green-700 hover:underline">
                 contact page
               </a>
               .
