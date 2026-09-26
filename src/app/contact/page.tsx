@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Contact | UnifiedOps",
@@ -15,41 +16,29 @@ export default function ContactPage() {
         <p className="text-lg text-slate-300 mb-10">
           Fill out the form and we&apos;ll be in touch within 24 hours.
         </p>
-        <form className="text-left space-y-5 bg-white p-8 rounded-2xl shadow-2xl">
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1.5">
-              Your Name
-            </label>
-            <input
-              type="text"
-              placeholder="Jane Smith"
-              className="form-field"
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1.5">
-              Your Email
-            </label>
-            <input
-              type="email"
-              placeholder="jane@example.com"
-              className="form-field"
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1.5">
-              How can we help?
-            </label>
-            <textarea
-              placeholder="Tell us a bit about your business"
-              className="form-field h-32"
-            />
-          </div>
-          <button type="submit" className="btn-primary w-full">
-            Send Message
-          </button>
-        </form>
+        <div className="bg-white p-4 sm:p-8 rounded-2xl shadow-2xl text-left">
+          <iframe
+            src="https://api.unifiedops.io/widget/form/N1jPO0u1eW3dwHvS7b8S"
+            style={{ width: "100%", height: "860px", border: "none", borderRadius: "0px" }}
+            id="inline-N1jPO0u1eW3dwHvS7b8S"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="3.0 Contact Form"
+            data-height="860"
+            data-layout-iframe-id="inline-N1jPO0u1eW3dwHvS7b8S"
+            data-form-id="N1jPO0u1eW3dwHvS7b8S"
+            data-cookie-consent="true"
+            data-cookie-consent-provider="auto"
+            title="3.0 Contact Form"
+          />
+        </div>
       </div>
+      <Script src="https://api.unifiedops.io/js/form_embed.js" strategy="afterInteractive" />
     </section>
   );
 }
