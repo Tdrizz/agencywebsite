@@ -8,11 +8,11 @@ export const metadata: Metadata = {
 
 const projects = [
   {
-    name: "Alamont Builders",
-    industry: "Commercial Construction · Mat-Su Borough, AK",
+    name: "UnifiedOps.io",
+    industry: "Websites & Marketing Systems for Contractors",
     description:
-      "A custom site for a commercial remodel and construction contractor. Clean design, mobile friendly, with a contact form that sends estimate requests straight to their inbox.",
-    url: "https://alamontbuilders.vercel.app",
+      "A custom site for a websites-and-marketing platform built for contractors, with clear pricing, a portfolio, and pages built to turn visitors into booked calls.",
+    url: "https://unifiedops.io",
   },
   {
     name: "In & Out Flooring",
