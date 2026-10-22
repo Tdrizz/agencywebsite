@@ -21,6 +21,9 @@ body {
 
 h1, h2, h3, .heading-font {
   font-family: var(--font-heading), var(--font-sans), sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-wrap: balance;
 }
 
 /* Navigation */

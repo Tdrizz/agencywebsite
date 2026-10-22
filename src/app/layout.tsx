@@ -13,7 +13,7 @@ const inter = Inter({
 const sora = Sora({
   variable: "--font-sora",
   subsets: ["latin"],
-  weight: ["600", "700", "800"],
+  weight: ["600", "700"],
 });
 
 const siteTitle =
