@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Contact | AK Website Agency",
 };
 
-const CONTACT_EMAIL = "tittanolson@gmail.com";
+const CONTACT_EMAIL = "tittanolsondev@gmail.com";
 
 export default function ContactPage() {
   return (

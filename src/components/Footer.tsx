@@ -7,7 +7,7 @@ const siteLinks = [
   { href: "/about", label: "About" },
 ];
 
-const CONTACT_EMAIL = "tittanolson@gmail.com";
+const CONTACT_EMAIL = "tittanolsondev@gmail.com";
 
 export default function Footer() {
   const year = new Date().getFullYear();

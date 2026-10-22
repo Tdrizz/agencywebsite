@@ -15,11 +15,6 @@ export default function RefundPolicyPage() {
       />
 
       <section className="py-20 px-6 max-w-3xl mx-auto">
-        <div className="bg-amber-50 border border-amber-200 text-amber-900 text-sm rounded-xl p-4 mb-10">
-          This is a plain-language summary and should be reviewed by a
-          lawyer before you rely on it legally.
-        </div>
-
         <div className="space-y-10 text-gray-700 leading-relaxed text-sm">
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
