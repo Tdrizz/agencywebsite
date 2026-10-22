@@ -1,16 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
-  { href: "/products", label: "What's Included" },
-  { href: "/pricing", label: "Pricing" },
+  { href: "/services", label: "Services" },
   { href: "/portfolio", label: "Portfolio" },
-  { href: "/trades", label: "Trades We Serve" },
-  { href: "/process", label: "Our Process" },
+  { href: "/process", label: "How It Works" },
   { href: "/about", label: "About" },
 ];
 
@@ -22,9 +19,8 @@ export default function Nav() {
     <nav className="site-nav">
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <Image src="/logo.svg" alt="UnifiedOps" width={34} height={34} className="rounded-[9px]" />
           <span className="text-lg font-bold heading-font tracking-tight">
-            UnifiedOps
+            AK Website Agency
           </span>
         </Link>
         <ul className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
@@ -39,7 +35,7 @@ export default function Nav() {
         <div className="flex items-center gap-3">
           <span className="hidden sm:inline-flex">
             <Link href="/contact" className="btn-primary btn-primary-sm">
-              Book a Call
+              Get a Quote
             </Link>
           </span>
           <button
@@ -87,7 +83,7 @@ export default function Nav() {
             onClick={() => setOpen(false)}
             className="btn-primary w-full"
           >
-            Book a Call
+            Get a Quote
           </Link>
         </div>
       )}

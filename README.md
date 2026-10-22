@@ -1,6 +1,6 @@
-# UnifiedOps
+# AK Website Agency
 
-Marketing site for UnifiedOps — websites and marketing systems for contractors. Built with [Next.js](https://nextjs.org) (App Router) and Tailwind CSS.
+Business website for AK Website Agency — custom websites, SEO, Google Ads setup, and maintenance for small businesses and nonprofits in Alaska and Hawaii. Built with [Next.js](https://nextjs.org) (App Router) and Tailwind CSS.
 
 ## Getting Started
 
@@ -14,12 +14,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it.
 ## Pages
 
 - `/` — Home
-- `/products` — Product details
-- `/pricing` — Pricing
-- `/trades` — Trades we serve
-- `/process` — Our process
+- `/services` — Services & pricing
+- `/portfolio` — Portfolio
+- `/process` — How it works
 - `/about` — About
 - `/contact` — Contact
+- `/terms` — Terms of Service
+- `/refund-policy` — Refund Policy
+- `/privacy` — Privacy Policy
 
 ## Deploy
 

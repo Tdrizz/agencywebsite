@@ -3,7 +3,7 @@ import PageHero from "@/components/PageHero";
 import CtaBand from "@/components/CtaBand";
 
 export const metadata: Metadata = {
-  title: "Portfolio | UnifiedOps",
+  title: "Portfolio | AK Website Agency",
 };
 
 const projects = [
@@ -28,8 +28,8 @@ export default function PortfolioPage() {
     <>
       <PageHero
         eyebrow="Portfolio"
-        title="Sites we've built"
-        subtitle="A look at the kind of work we do for local businesses."
+        title="Sites I've built"
+        subtitle="A look at the kind of work I do for small businesses."
       />
 
       <section className="py-24 px-6 max-w-4xl mx-auto">
@@ -80,7 +80,7 @@ export default function PortfolioPage() {
 
       <CtaBand
         heading="Want your business featured here?"
-        body="Tell us about your business and we'll show you what we'd build."
+        body="Tell me about your business and I'll show you what I'd build."
       />
     </>
   );

@@ -21,11 +21,11 @@ const heroChecks = [
     ),
   },
   {
-    label: "Working contact form so leads land in your inbox",
+    label: "Flat project pricing, agreed before work starts",
     path: <path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />,
   },
   {
-    label: "Deployed and live on your domain",
+    label: "Launched on your own domain",
     path: (
       <>
         <circle cx="12" cy="12" r="10" />
@@ -38,19 +38,19 @@ const heroChecks = [
 
 const steps = [
   {
-    title: "Tell Us About Your Business",
+    title: "Free Consultation",
     description:
-      "A quick call or form to learn what you do, who your customers are, and what you want your site to say.",
+      "A quick call or email to learn about your business and what you need your site to do.",
   },
   {
-    title: "We Build It",
+    title: "Proposal & Deposit",
     description:
-      "Your site is designed and built around your business. No templates that look like everyone else's.",
+      "You get a flat price proposal. Work starts once you approve it and pay a 50% deposit.",
   },
   {
-    title: "Launch",
+    title: "Build & Launch",
     description:
-      "We deploy it live on your domain and walk you through it. Live within 3-5 business days.",
+      "Your site is designed, built, and revised with your feedback, then launched on your domain.",
   },
 ];
 
@@ -61,28 +61,28 @@ export default function Home() {
       <section className="hero-bg px-6 pt-20 pb-24">
         <div className="max-w-6xl mx-auto relative grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="eyebrow">Websites and marketing for small businesses</span>
+            <span className="eyebrow">Websites for small businesses & nonprofits</span>
             <h1 className="heading-font text-5xl font-extrabold leading-tight mt-6 mb-6">
-              A website built for your business, plus the marketing to back it
+              A custom website for your business, built right the first time
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-xl">
-              UnifiedOps designs and builds a custom website for your
-              business and pairs it with a full marketing system: missed
-              call text back, review management, local SEO, and more. One
-              setup fee, then one monthly plan.
+              I design and build custom websites for small businesses and
+              nonprofits in Alaska and Hawaii, with optional SEO, Google Ads
+              setup, and ongoing maintenance. Flat project pricing, agreed
+              up front.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="btn-primary">
-                Get Started
+                Get a Quote
               </Link>
               <Link href="/portfolio" className="btn-secondary">
-                See Our Work
+                See My Work
               </Link>
             </div>
             <div className="flex flex-wrap gap-x-8 gap-y-3 mt-10 text-sm text-gray-500">
-              <span>✓ No long contracts</span>
-              <span>✓ Live in 3-5 business days</span>
-              <span>✓ First month included</span>
+              <span>✓ Flat project pricing</span>
+              <span>✓ Mobile friendly</span>
+              <span>✓ You own your content and domain</span>
             </div>
           </div>
 
@@ -138,38 +138,34 @@ export default function Home() {
           </div>
           <div className="text-center">
             <Link href="/process" className="btn-secondary">
-              More About Our Process
+              See the Full Process
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Pricing Teaser */}
+      {/* Services Teaser */}
       <section className="py-24 px-6 max-w-4xl mx-auto text-center">
-        <span className="eyebrow">Pricing</span>
+        <span className="eyebrow">Services</span>
         <h2 className="heading-font text-3xl md:text-4xl font-bold mt-5 mb-4">
-          One plan, everything included
+          Websites, SEO, ads, and ongoing care
         </h2>
         <p className="text-gray-600 mb-4 max-w-xl mx-auto">
-          Your website plus the full marketing system: missed call text
-          back, review management, local SEO, and more.
+          From a custom website build to full SEO and Google Ads setup, to
+          monthly maintenance that keeps everything running.
         </p>
         <p className="mb-8">
-          <span className="text-4xl font-extrabold heading-font">$500</span>
-          <span className="text-gray-500"> to start</span>
-          <span className="text-gray-400 text-sm block mt-1">
-            First month included. Then $325/month for the marketing
-            system and hosting.
-          </span>
+          <span className="text-4xl font-extrabold heading-font">$2,500</span>
+          <span className="text-gray-500"> starting price for a custom website</span>
         </p>
-        <Link href="/pricing" className="btn-primary">
-          See Pricing
+        <Link href="/services" className="btn-primary">
+          See Services & Pricing
         </Link>
       </section>
 
       <CtaBand
         heading="Ready for a website that's actually yours?"
-        body="Tell us about your business and we'll show you what we'd build."
+        body="Tell me about your business and I'll send over a flat-price proposal."
       />
     </>
   );

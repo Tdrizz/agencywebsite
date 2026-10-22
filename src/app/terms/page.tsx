@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | UnifiedOps",
+  title: "Terms of Service | AK Website Agency",
 };
 
 export default function TermsPage() {
@@ -11,36 +11,38 @@ export default function TermsPage() {
       <PageHero
         eyebrow="Legal"
         title="Terms of Service"
-        subtitle="Last updated: January 2026"
+        subtitle="Last updated: October 2026"
       />
 
       <section className="py-20 px-6 max-w-3xl mx-auto">
+        <div className="bg-amber-50 border border-amber-200 text-amber-900 text-sm rounded-xl p-4 mb-10">
+          This is a plain-language summary and should be reviewed by a
+          lawyer before you rely on it legally.
+        </div>
+
         <div className="space-y-10 text-gray-700 leading-relaxed text-sm">
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              1. Agreement to Terms
+              1. Agreement
             </h2>
             <p>
-              These Terms of Service (&quot;Terms&quot;) govern your use of
-              the UnifiedOps website and services. By booking a call,
-              signing up for a plan, or otherwise using our services, you
-              agree to these Terms. If you don&apos;t agree, please don&apos;t
-              use our services.
+              These Terms of Service govern any website project or
+              maintenance work you book with AK Website Agency. By
+              approving a proposal or paying a deposit, you agree to these
+              Terms.
             </p>
           </div>
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              2. Our Services
+              2. How Services Are Quoted
             </h2>
             <p>
-              UnifiedOps builds a custom website and pairs it with an
-              ongoing marketing system: missed call text back, review
-              management, one click marketing campaigns, local SEO, and a
-              shared inbox. Hosting tiers and full pricing are described on
-              our{" "}
-              <a href="/pricing" className="text-blue-600 hover:underline">
-                Pricing
+              Services are quoted as flat project fees, agreed in writing
+              before work begins. You&apos;ll always know the price of a
+              project up front. Details on what&apos;s offered are on the{" "}
+              <a href="/services" className="text-blue-600 hover:underline">
+                Services &amp; Pricing
               </a>{" "}
               page.
             </p>
@@ -48,137 +50,107 @@ export default function TermsPage() {
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              3. Accounts &amp; Onboarding
+              3. Deposit &amp; Payment
             </h2>
             <p>
-              To get started, you&apos;ll provide accurate information about
-              your business during onboarding. You&apos;re responsible for
-              keeping your account and business information current and
-              accurate.
+              Project work is billed in two parts: a 50% deposit to start
+              the project, and the remaining 50% due at launch. Monthly
+              maintenance, if you choose it, is billed monthly.
             </p>
           </div>
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              4. Billing
+              4. Changes &amp; Revisions
             </h2>
             <p>
-              Getting started costs a single upfront setup fee, described on
-              our{" "}
-              <a href="/pricing" className="text-blue-600 hover:underline">
-                Pricing
+              Each project includes a set number of revision rounds, as
+              described in the proposal. Changes that go beyond the
+              original agreed scope, such as new pages or features added
+              after the project starts, are quoted and agreed separately
+              before that extra work begins.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
+              5. Ownership
+            </h2>
+            <p>
+              You own the content, branding, and domain for your website.
+              If you cancel maintenance or stop working with AK Website
+              Agency, your site and domain remain yours.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
+              6. Your Responsibilities
+            </h2>
+            <p>
+              You&apos;re responsible for providing accurate business
+              information and content needed to build your site, and for
+              using the finished site in compliance with applicable laws.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
+              7. Cancellation &amp; Refunds
+            </h2>
+            <p>
+              Details on canceling a project or maintenance plan are on the{" "}
+              <a
+                href="/refund-policy"
+                className="text-blue-600 hover:underline"
+              >
+                Refund Policy
               </a>{" "}
-              page. Your first month of the monthly plan is included in
-              that fee. After that, the monthly plan renews automatically
-              until canceled. You&apos;re responsible for all charges
-              incurred under your account.
+              page.
             </p>
           </div>
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              5. Cancellation
+              8. No Guarantee of Results
             </h2>
             <p>
-              The setup fee is a single, non refundable purchase. The
-              monthly plan can be canceled at any time, effective at the
-              end of your current billing period. Since we host your site
-              as part of the plan, canceling ends hosting, though you keep
-              your domain and we&apos;ll export your site&apos;s content to
-              you.
+              I build your site to a high standard, but I can&apos;t
+              guarantee specific traffic, rankings, ad performance, or
+              revenue, since those depend on many factors outside my
+              control.
             </p>
           </div>
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              6. Acceptable Use
-            </h2>
-            <p className="mb-3">You agree not to use our services to:</p>
-            <ul className="list-disc pl-5 space-y-1">
-              <li>Violate any applicable law or regulation</li>
-              <li>Send unsolicited or misleading communications</li>
-              <li>Infringe on the intellectual property or rights of others</li>
-              <li>Interfere with or disrupt the operation of our services</li>
-            </ul>
-          </div>
-
-          <div>
-            <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              7. Text Messaging and Communications Tools
+              9. Limitation of Liability
             </h2>
             <p>
-              If your plan includes missed call text back, review requests,
-              or marketing campaigns, you&apos;re responsible for using them
-              in compliance with applicable messaging and telemarketing
-              laws, including obtaining proper consent from your own
-              customers before texting them.
+              To the fullest extent permitted by law, AK Website Agency is
+              not liable for indirect or consequential damages arising from
+              your use of the website or services. Total liability for any
+              claim is limited to the amount you&apos;ve paid for the
+              project or plan in question.
             </p>
           </div>
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              8. Intellectual Property
+              10. Changes to These Terms
             </h2>
             <p>
-              Upon full payment, you own the content and branding created
-              specifically for your website. UnifiedOps retains ownership of
-              our underlying tools, templates, and processes used to deliver
-              our services.
+              These Terms may be updated from time to time. The current
+              version always applies to new work booked after an update.
             </p>
           </div>
 
           <div>
             <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              9. Disclaimers
+              11. Contact
             </h2>
             <p>
-              Our services are provided &quot;as is.&quot; While we build
-              your site to a high standard, we don&apos;t guarantee
-              specific business results, traffic, or revenue, as those
-              depend on many factors outside our control.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              10. Limitation of Liability
-            </h2>
-            <p>
-              To the fullest extent permitted by law, UnifiedOps will not be
-              liable for any indirect, incidental, or consequential damages
-              arising from your use of our services. Our total liability for
-              any claim will not exceed the amount you paid us in the three
-              months prior to the claim.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              11. Termination
-            </h2>
-            <p>
-              We may suspend or terminate your access to our services if you
-              violate these Terms or fail to pay applicable fees.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              12. Changes to These Terms
-            </h2>
-            <p>
-              We may update these Terms from time to time. Continued use of
-              our services after changes take effect means you accept the
-              updated Terms.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-xl font-bold heading-font text-gray-900 mb-3">
-              13. Contact Us
-            </h2>
-            <p>
-              Questions about these Terms? Reach out through our{" "}
+              Questions about these Terms? Reach out through the{" "}
               <a href="/contact" className="text-blue-600 hover:underline">
                 contact page
               </a>

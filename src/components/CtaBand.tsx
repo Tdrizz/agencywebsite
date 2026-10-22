@@ -14,7 +14,7 @@ export default function CtaBand({
       </h2>
       <p className="text-lg text-slate-300 mb-8 max-w-xl mx-auto">{body}</p>
       <Link href="/contact" className="btn-primary">
-        Book a Free Call
+        Get in Touch
       </Link>
     </section>
   );

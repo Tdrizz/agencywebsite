@@ -3,29 +3,39 @@ import PageHero from "@/components/PageHero";
 import CtaBand from "@/components/CtaBand";
 
 export const metadata: Metadata = {
-  title: "Our Process | UnifiedOps",
+  title: "How It Works | AK Website Agency",
 };
 
 const steps = [
   {
-    title: "Discovery Call",
+    title: "Free Consultation",
     description:
-      "A quick call where we learn about your business, answer your questions, and walk you through exactly what we'd build. No pressure, no jargon.",
+      "A quick call or email where I learn about your business, your goals, and what you need your site to do.",
   },
   {
-    title: "Onboarding & Build",
+    title: "Proposal With a Flat Price",
     description:
-      "You share your business details, branding, and content. We take it from there. Your site is designed and built around your business, usually live within 3-5 business days.",
+      "You get a written proposal with a flat price for the work, agreed up front. No hourly billing, no surprise invoices.",
   },
   {
-    title: "Launch",
+    title: "50% Deposit",
     description:
-      "We deploy your site live on your domain, walk you through it, and make sure you're happy before we call it done.",
+      "Once you approve the proposal, a 50% deposit gets the project started and reserves time on my schedule.",
   },
   {
-    title: "Ongoing Care (Optional)",
+    title: "Build & Revisions",
     description:
-      "If you'd rather not manage hosting and small updates yourself, pick a care plan and we'll keep things running. No contract, cancel anytime.",
+      "Your site is designed and built around your business. You review it, and revisions continue until it's right.",
+  },
+  {
+    title: "Launch & Final Payment",
+    description:
+      "Once you're happy with the site, it goes live on your domain and the remaining 50% is due.",
+  },
+  {
+    title: "Optional Monthly Maintenance",
+    description:
+      "If you'd rather not manage updates and monitoring yourself, Website Maintenance keeps everything running for $100/month. No obligation to sign up.",
   },
 ];
 
@@ -33,9 +43,9 @@ export default function ProcessPage() {
   return (
     <>
       <PageHero
-        eyebrow="Our Process"
-        title="What working with us looks like"
-        subtitle="No long onboarding, no runaround. Just a clear path from call to live website."
+        eyebrow="How It Works"
+        title="What working together looks like"
+        subtitle="A clear, flat-priced path from first conversation to a live website."
       />
 
       <section className="py-24 px-6 max-w-4xl mx-auto">
@@ -61,7 +71,7 @@ export default function ProcessPage() {
 
       <CtaBand
         heading="Ready to get started?"
-        body="Book your discovery call. It takes 20 minutes."
+        body="Reach out and tell me about your business. It takes a few minutes."
       />
     </>
   );
