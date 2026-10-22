@@ -62,7 +62,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto relative grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <span className="eyebrow">Websites for small businesses & nonprofits</span>
-            <h1 className="heading-font text-5xl font-extrabold leading-tight mt-6 mb-6">
+            <h1 className="heading-font text-5xl font-bold leading-tight tracking-tight mt-6 mb-6">
               A custom website for your business, built right the first time
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-xl">
@@ -155,7 +155,7 @@ export default function Home() {
           monthly maintenance that keeps everything running.
         </p>
         <p className="mb-8">
-          <span className="text-4xl font-extrabold heading-font">$2,500</span>
+          <span className="text-4xl font-bold heading-font">$2,500</span>
           <span className="text-gray-500"> starting price for a custom website</span>
         </p>
         <Link href="/services" className="btn-primary">
