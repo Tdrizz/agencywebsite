@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const projects = [
   {
-    name: "UnifiedOps.io",
+    name: "UnifiedOps",
     industry: "Websites & Marketing Systems for Contractors",
     description:
       "A custom site for a websites-and-marketing platform built for contractors, with clear pricing, a portfolio, and pages built to turn visitors into booked calls.",
