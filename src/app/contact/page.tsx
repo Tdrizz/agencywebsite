@@ -1,54 +1,50 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | UnifiedOps",
+  title: "Contact | AK Website Agency",
 };
+
+const CONTACT_EMAIL = "tittanolsondev@gmail.com";
 
 export default function ContactPage() {
   return (
-    <section className="contact-hero min-h-[calc(100vh-73px)] flex flex-col justify-between py-20 px-6 text-center">
+    <section className="contact-hero min-h-[calc(100vh-73px)] flex flex-col justify-center py-20 px-6 text-center">
       <div className="max-w-xl mx-auto w-full">
         <span className="eyebrow eyebrow-dark mb-6">Get in touch</span>
         <h1 className="heading-font text-4xl font-bold mb-4 text-white mt-6">
           Let&apos;s Talk
         </h1>
         <p className="text-lg text-slate-300 mb-10">
-          Fill out the form and we&apos;ll be in touch within 24 hours.
+          I serve small businesses and nonprofits in Alaska and Hawaii.
+          Email me about your project and I&apos;ll follow up with next
+          steps.
         </p>
-        <form className="text-left space-y-5 bg-white p-8 rounded-2xl shadow-2xl">
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1.5">
-              Your Name
-            </label>
-            <input
-              type="text"
-              placeholder="Jane Smith"
-              className="form-field"
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1.5">
-              Your Email
-            </label>
-            <input
-              type="email"
-              placeholder="jane@example.com"
-              className="form-field"
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1.5">
-              How can we help?
-            </label>
-            <textarea
-              placeholder="Tell us a bit about your business"
-              className="form-field h-32"
-            />
-          </div>
-          <button type="submit" className="btn-primary w-full">
-            Send Message
-          </button>
-        </form>
+
+        <div className="bg-white p-8 sm:p-10 rounded-2xl shadow-2xl text-left">
+          <p className="text-sm font-medium text-gray-700 mb-1.5">Email</p>
+          <a
+            href={`mailto:${CONTACT_EMAIL}`}
+            className="text-2xl font-bold heading-font text-blue-600 hover:underline break-all"
+          >
+            {CONTACT_EMAIL}
+          </a>
+          <p className="text-gray-600 text-sm mt-4 mb-6">
+            Tell me a bit about your business, what you need your website
+            to do, and any deadlines you&apos;re working with.
+          </p>
+          <a
+            href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
+              "Website inquiry"
+            )}`}
+            className="btn-primary w-full"
+          >
+            Email Me
+          </a>
+        </div>
+
+        <p className="text-slate-400 text-sm mt-8">
+          Serving small businesses and nonprofits across Alaska and Hawaii.
+        </p>
       </div>
     </section>
   );

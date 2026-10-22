@@ -16,10 +16,26 @@ const sora = Sora({
   weight: ["600", "700", "800"],
 });
 
+const siteTitle =
+  "AK Website Agency | Custom Websites for Small Businesses & Nonprofits";
+const siteDescription =
+  "AK Website Agency builds custom, mobile-friendly websites for small businesses and nonprofits in Alaska and Hawaii, with optional SEO, Google Ads setup, and ongoing maintenance.";
+
 export const metadata: Metadata = {
-  title: "UnifiedOps | Websites & Marketing Systems for Small Businesses",
-  description:
-    "UnifiedOps builds a custom website for your small business and pairs it with a full marketing system: missed call text back, review management, and local SEO, all in one monthly plan.",
+  title: siteTitle,
+  description: siteDescription,
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    siteName: "AK Website Agency",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
+    title: siteTitle,
+    description: siteDescription,
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

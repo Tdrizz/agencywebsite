@@ -1,29 +1,29 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const siteLinks = [
-  { href: "/products", label: "What's Included" },
-  { href: "/pricing", label: "Pricing" },
+  { href: "/services", label: "Services" },
   { href: "/portfolio", label: "Portfolio" },
-  { href: "/trades", label: "Trades We Serve" },
-  { href: "/process", label: "Our Process" },
+  { href: "/process", label: "How It Works" },
   { href: "/about", label: "About" },
 ];
 
+const CONTACT_EMAIL = "tittanolsondev@gmail.com";
+
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="site-footer px-6 pt-16 pb-8">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 mb-12">
         <div>
-          <div className="flex items-center gap-3 mb-4">
-            <Image src="/logo.svg" alt="UnifiedOps" width={34} height={34} className="rounded-[9px]" />
+          <div className="mb-4">
             <span className="text-lg font-bold heading-font text-white">
-              UnifiedOps
+              AK Website Agency
             </span>
           </div>
           <p className="text-sm max-w-xs">
-            Websites and marketing systems for small businesses. Simple
-            pricing, no fluff.
+            Custom websites for small businesses and nonprofits in Alaska
+            and Hawaii. Flat project pricing, no surprises.
           </p>
         </div>
         <div>
@@ -40,16 +40,23 @@ export default function Footer() {
           <p className="text-white font-semibold text-sm mb-4">Get Started</p>
           <ul className="space-y-3 text-sm">
             <li>
-              <Link href="/contact">Book a Call</Link>
+              <Link href="/contact">Contact</Link>
+            </li>
+            <li>
+              <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
             </li>
           </ul>
         </div>
       </div>
       <div className="max-w-6xl mx-auto border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-3 text-xs text-slate-500">
-        <span>&copy; 2026 UnifiedOps. All rights reserved.</span>
+        <span>
+          &copy; {year} AK Website Agency. All rights reserved. ·{" "}
+          <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+        </span>
         <div className="flex items-center gap-5">
-          <Link href="/privacy">Privacy Policy</Link>
           <Link href="/terms">Terms of Service</Link>
+          <Link href="/refund-policy">Refund Policy</Link>
+          <Link href="/privacy">Privacy Policy</Link>
         </div>
       </div>
     </footer>
